@@ -1,0 +1,758 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C8D5C588-5D2A-47BB-914F-9797E06FC5F0}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebApplication5</RootNamespace>
+    <AssemblyName>WebApplication5</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.1\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.0.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.0.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.0.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.0.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.0.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.0.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\attendanceController.cs" />
+    <Compile Include="Controllers\atttendance\atten_aprilController.cs" />
+    <Compile Include="Controllers\atttendance\atten_augController.cs" />
+    <Compile Include="Controllers\atttendance\atten_decController.cs" />
+    <Compile Include="Controllers\atttendance\atten_febController.cs" />
+    <Compile Include="Controllers\atttendance\atten_JanuaryController.cs" />
+    <Compile Include="Controllers\atttendance\atten_JulyController.cs" />
+    <Compile Include="Controllers\atttendance\atten_JuneController.cs" />
+    <Compile Include="Controllers\atttendance\atten_marchController.cs" />
+    <Compile Include="Controllers\atttendance\atten_mayController.cs" />
+    <Compile Include="Controllers\atttendance\atten_novController.cs" />
+    <Compile Include="Controllers\atttendance\atten_octController.cs" />
+    <Compile Include="Controllers\atttendance\atten_sepController.cs" />
+    <Compile Include="Controllers\CourcesController.cs" />
+    <Compile Include="Controllers\courses\classIII_coursesController.cs" />
+    <Compile Include="Controllers\courses\classII_coursesController.cs" />
+    <Compile Include="Controllers\courses\classIV_coursesController.cs" />
+    <Compile Include="Controllers\courses\classI_coursesController.cs" />
+    <Compile Include="Controllers\courses\classV_coursesController.cs" />
+    <Compile Include="Controllers\courses\IX_coursesController.cs" />
+    <Compile Include="Controllers\courses\playgroup_coursesController.cs" />
+    <Compile Include="Controllers\courses\VIII_coursesController.cs" />
+    <Compile Include="Controllers\courses\VII_coursesController.cs" />
+    <Compile Include="Controllers\courses\VI_coursesController.cs" />
+    <Compile Include="Controllers\courses\X_coursesController.cs" />
+    <Compile Include="Controllers\EnrollmentController.cs" />
+    <Compile Include="Controllers\eventssesController.cs" />
+    <Compile Include="Controllers\FeeController.cs" />
+    <Compile Include="Controllers\feecontroller\fee_Amount_AprilController.cs" />
+    <Compile Include="Controllers\feecontroller\fee_Amount_AugestController.cs" />
+    <Compile Include="Controllers\feecontroller\fee_Amount_DecemberController.cs" />
+    <Compile Include="Controllers\feecontroller\fee_Amount_FebruaryController.cs" />
+    <Compile Include="Controllers\feecontroller\fee_Amount_JanuaryController.cs" />
+    <Compile Include="Controllers\feecontroller\fee_Amount_JulyController.cs" />
+    <Compile Include="Controllers\feecontroller\fee_Amount_marchController.cs" />
+    <Compile Include="Controllers\feecontroller\fee_Amount_MayController.cs" />
+    <Compile Include="Controllers\feecontroller\fee_Amount_JuneController.cs" />
+    <Compile Include="Controllers\feecontroller\fee_Amount_NovemberController.cs" />
+    <Compile Include="Controllers\feecontroller\fee_Amount_OctuberController.cs" />
+    <Compile Include="Controllers\feecontroller\fee_Amount_SeptemberController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\RegistrationController.cs" />
+    <Compile Include="Controllers\stu_enrolmentController.cs" />
+    <Compile Include="Controllers\teachersController.cs" />
+    <Compile Include="Controllers\timetablesController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="images\attenmarchviewmodel.cs" />
+    <Compile Include="Models\adminviewmodel.cs" />
+    <Compile Include="Models\atteaugviewmodel.cs" />
+    <Compile Include="Models\attenaprilviewmodel.cs" />
+    <Compile Include="Models\attendecviewmodel.cs" />
+    <Compile Include="Models\attenfebviewmodel.cs" />
+    <Compile Include="Models\attenjulyviewmodel.cs" />
+    <Compile Include="Models\attenjuneviewmodel.cs" />
+    <Compile Include="Models\attenmarchviewmodel.cs" />
+    <Compile Include="Models\attenmayviewmodel.cs" />
+    <Compile Include="Models\attennovviewmodel.cs" />
+    <Compile Include="Models\attenoctviewmodel.cs" />
+    <Compile Include="Models\attensepviewmodel.cs" />
+    <Compile Include="Models\atten_april.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\atten_aug.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\atten_dec.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\atten_feb.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\atten_January.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\atten_July.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\atten_June.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\atten_march.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\atten_may.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\atten_nov.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\atten_oct.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\atten_sep.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\attjanviewmodel.cs" />
+    <Compile Include="Models\classiiiviewmodel.cs" />
+    <Compile Include="Models\classIII_courses.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\classiiviewmodel.cs" />
+    <Compile Include="Models\classII_courses.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\classIviewmodel.cs" />
+    <Compile Include="Models\classivviewmodel.cs" />
+    <Compile Include="Models\classIV_courses.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\classixviewmodel.cs" />
+    <Compile Include="Models\classI_courses.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\classviiivewimodel.cs" />
+    <Compile Include="Models\classviiviewmodel.cs" />
+    <Compile Include="Models\classViviewmodel.cs" />
+    <Compile Include="Models\classvviewmodel.cs" />
+    <Compile Include="Models\classV_courses.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\classxviewmodel.cs" />
+    <Compile Include="Models\enrolmentviewmodel.cs" />
+    <Compile Include="Models\eventss.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\eventviwmodel.cs" />
+    <Compile Include="Models\febamountviewmodel.cs" />
+    <Compile Include="Models\feeaprilviewmodel.cs" />
+    <Compile Include="Models\feeaugviewmodel.cs" />
+    <Compile Include="Models\feedecviewmodel.cs" />
+    <Compile Include="Models\feejulyviewmodel.cs" />
+    <Compile Include="Models\feejuneviewmodel.cs" />
+    <Compile Include="Models\feemayviewmodel.cs" />
+    <Compile Include="Models\feenovviewmodel.cs" />
+    <Compile Include="Models\feeoctviewmodel.cs" />
+    <Compile Include="Models\feesepviewmodel.cs" />
+    <Compile Include="Models\fee_Amount_April.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\fee_Amount_Augest.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\fee_Amount_December.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\fee_Amount_February.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\fee_Amount_January.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\fee_Amount_July.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\fee_Amount_June.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\fee_Amount_march.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\fee_Amount_May.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\fee_Amount_November.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\fee_Amount_Octuber.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\fee_Amount_September.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\IX_courses.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\janfeeviewmodel.cs" />
+    <Compile Include="Models\marfeeviemodel.cs" />
+    <Compile Include="Models\metadataclass.cs" />
+    <Compile Include="Models\Model1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\playgroup_courses.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\playgviewmodel.cs" />
+    <Compile Include="Models\registrationviewmodel.cs" />
+    <Compile Include="Models\tbl_admin.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tbl_enrolment.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tbl_registration.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\teacher.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\teacherviewmodel.cs" />
+    <Compile Include="Models\timetable.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\timetableviewmodel.cs" />
+    <Compile Include="Models\VIII_courses.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\VII_courses.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\VI_courses.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\X_courses.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\bootstrap.paper.min.css" />
+    <Content Include="Content\index.css\index.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="images\1409358.png" />
+    <Content Include="images\15623-synthesis-of-the-desktop.jpg" />
+    <Content Include="images\2011_07_fp_summerreadingwriting_z.jpg" />
+    <Content Include="images\3.jpg" />
+    <Content Include="images\4kids.jpg" />
+    <Content Include="images\9175247.jpg" />
+    <Content Include="images\93af748c2724.jpg" />
+    <Content Include="images\9da562b0f0f4b964a6bda0221168bb31.jpg" />
+    <Content Include="images\Baby-Activities-551x374.jpg" />
+    <Content Include="images\Back-to-school-children-in-uniforms.jpg" />
+    <Content Include="images\bio.jpg" />
+    <Content Include="images\biostatistics-certificates.png" />
+    <Content Include="images\black-and-white-christmas-ornaments-white-balls-shiny-silver-ball-hanging-isolated-on-background-ornaments-black-white-christmas-decorations-for-trees.jpg" />
+    <Content Include="images\child-school-color-stock-today-160816-tease_b79c3312e348a773c2d5d147462f137b.fit-760w.jpg" />
+    <Content Include="images\colored-pencils-pencil-positive-82958.jpg" />
+    <Content Include="images\download.jpg" />
+    <Content Include="images\e8a3412e2016c09dcd313f15b8fb86db.jpg" />
+    <Content Include="images\explotar-la-creatividad-del-niño.jpg" />
+    <Content Include="images\fee_structure.jpg" />
+    <Content Include="images\file-20171221-15878-fv1rnt.jpg" />
+    <Content Include="images\How_Do_Children_Learn_To_Read.jpg" />
+    <Content Include="images\images %281%29.jpg" />
+    <Content Include="images\images.jpg" />
+    <Content Include="images\iStock_000010376541Small.jpg" />
+    <Content Include="images\kisspng-hands-on-childrens-museum-child-care-family-teache-kids-fashion-5acde39a6caa55.9170158315234425864451.jpg" />
+    <Content Include="images\kisspng-pre-school-child-care-school-district-children-s-paradise-5adc1f0d6c9884.6928138715243753094448.png" />
+    <Content Include="images\lecturas-infantiles-para-el-verano--478x270.JPG" />
+    <Content Include="images\login-admin.png" />
+    <Content Include="images\LOGO.png" />
+    <Content Include="images\mp90043948211.jpg" />
+    <Content Include="images\pen-581881_1920_1.jpg" />
+    <Content Include="images\pexels-photo-259915.jpeg" />
+    <Content Include="images\photo-1472162072942-cd5147eb3902.jpg" />
+    <Content Include="images\portrayal-89193_960_720.jpg" />
+    <Content Include="images\Reading-image.png" />
+    <Content Include="images\reading-programs2.jpg" />
+    <Content Include="images\The-City-School-pakistan-Logo.png" />
+    <Content Include="images\Untitled-1.jpg" />
+    <Content Include="images\wfs3AT.jpg" />
+    <Content Include="images\whycode_lead_istock.jpg" />
+    <Content Include="images\women.jpg" />
+    <Content Include="images\iSt_000019277803_600px.jpg" />
+    <Content Include="Models\Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
+    </Content>
+    <Content Include="Scripts\ai.0.22.9-build00167.js" />
+    <Content Include="Scripts\ai.0.22.9-build00167.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\shutterstock_721325551.webp" />
+    <EntityDeploy Include="Models\Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Content>
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Enrollment\Enrollment.cshtml" />
+    <Content Include="Views\Fee\Fee.cshtml" />
+    <Content Include="Views\Admin\login.cshtml" />
+    <Content Include="Views\Registration\Create.cshtml" />
+    <Content Include="Views\Registration\Delete.cshtml" />
+    <Content Include="Views\Registration\Details.cshtml" />
+    <Content Include="Views\Registration\Edit.cshtml" />
+    <Content Include="Views\Registration\Index.cshtml" />
+    <Content Include="Views\stu_enrolment\Create.cshtml" />
+    <Content Include="Views\stu_enrolment\Delete.cshtml" />
+    <Content Include="Views\stu_enrolment\Details.cshtml" />
+    <Content Include="Views\stu_enrolment\Edit.cshtml" />
+    <Content Include="Views\stu_enrolment\Index.cshtml" />
+    <Content Include="Views\teachers\Create.cshtml" />
+    <Content Include="Views\teachers\Delete.cshtml" />
+    <Content Include="Views\teachers\Details.cshtml" />
+    <Content Include="Views\teachers\Edit.cshtml" />
+    <Content Include="Views\teachers\Index.cshtml" />
+    <Content Include="Views\eventsses\Create.cshtml" />
+    <Content Include="Views\eventsses\Delete.cshtml" />
+    <Content Include="Views\eventsses\Details.cshtml" />
+    <Content Include="Views\eventsses\Edit.cshtml" />
+    <Content Include="Views\eventsses\Index.cshtml" />
+    <Content Include="Views\fee_Amount_January\Create.cshtml" />
+    <Content Include="Views\fee_Amount_January\Delete.cshtml" />
+    <Content Include="Views\fee_Amount_January\Details.cshtml" />
+    <Content Include="Views\fee_Amount_January\Edit.cshtml" />
+    <Content Include="Views\fee_Amount_January\Index.cshtml" />
+    <Content Include="Views\fee_Amount_February\Create.cshtml" />
+    <Content Include="Views\fee_Amount_February\Delete.cshtml" />
+    <Content Include="Views\fee_Amount_February\Details.cshtml" />
+    <Content Include="Views\fee_Amount_February\Edit.cshtml" />
+    <Content Include="Views\fee_Amount_February\Index.cshtml" />
+    <Content Include="Views\fee_Amount_march\Create.cshtml" />
+    <Content Include="Views\fee_Amount_march\Delete.cshtml" />
+    <Content Include="Views\fee_Amount_march\Details.cshtml" />
+    <Content Include="Views\fee_Amount_march\Edit.cshtml" />
+    <Content Include="Views\fee_Amount_march\Index.cshtml" />
+    <Content Include="Views\fee_Amount_April\Create.cshtml" />
+    <Content Include="Views\fee_Amount_April\Delete.cshtml" />
+    <Content Include="Views\fee_Amount_April\Details.cshtml" />
+    <Content Include="Views\fee_Amount_April\Edit.cshtml" />
+    <Content Include="Views\fee_Amount_April\Index.cshtml" />
+    <Content Include="Views\fee_Amount_May\Create.cshtml" />
+    <Content Include="Views\fee_Amount_May\Delete.cshtml" />
+    <Content Include="Views\fee_Amount_May\Details.cshtml" />
+    <Content Include="Views\fee_Amount_May\Edit.cshtml" />
+    <Content Include="Views\fee_Amount_May\Index.cshtml" />
+    <Content Include="Views\fee_Amount_June\Create.cshtml" />
+    <Content Include="Views\fee_Amount_June\Delete.cshtml" />
+    <Content Include="Views\fee_Amount_June\Details.cshtml" />
+    <Content Include="Views\fee_Amount_June\Edit.cshtml" />
+    <Content Include="Views\fee_Amount_June\Index.cshtml" />
+    <Content Include="Views\fee_Amount_July\Create.cshtml" />
+    <Content Include="Views\fee_Amount_July\Delete.cshtml" />
+    <Content Include="Views\fee_Amount_July\Details.cshtml" />
+    <Content Include="Views\fee_Amount_July\Edit.cshtml" />
+    <Content Include="Views\fee_Amount_July\Index.cshtml" />
+    <Content Include="Views\fee_Amount_Augest\Create.cshtml" />
+    <Content Include="Views\fee_Amount_Augest\Delete.cshtml" />
+    <Content Include="Views\fee_Amount_Augest\Details.cshtml" />
+    <Content Include="Views\fee_Amount_Augest\Edit.cshtml" />
+    <Content Include="Views\fee_Amount_Augest\Index.cshtml" />
+    <Content Include="Views\fee_Amount_September\Create.cshtml" />
+    <Content Include="Views\fee_Amount_September\Delete.cshtml" />
+    <Content Include="Views\fee_Amount_September\Details.cshtml" />
+    <Content Include="Views\fee_Amount_September\Edit.cshtml" />
+    <Content Include="Views\fee_Amount_September\Index.cshtml" />
+    <Content Include="Views\fee_Amount_Octuber\Create.cshtml" />
+    <Content Include="Views\fee_Amount_Octuber\Delete.cshtml" />
+    <Content Include="Views\fee_Amount_Octuber\Details.cshtml" />
+    <Content Include="Views\fee_Amount_Octuber\Edit.cshtml" />
+    <Content Include="Views\fee_Amount_Octuber\Index.cshtml" />
+    <Content Include="Views\fee_Amount_November\Create.cshtml" />
+    <Content Include="Views\fee_Amount_November\Delete.cshtml" />
+    <Content Include="Views\fee_Amount_November\Details.cshtml" />
+    <Content Include="Views\fee_Amount_November\Edit.cshtml" />
+    <Content Include="Views\fee_Amount_November\Index.cshtml" />
+    <Content Include="Views\fee_Amount_December\Create.cshtml" />
+    <Content Include="Views\fee_Amount_December\Delete.cshtml" />
+    <Content Include="Views\fee_Amount_December\Details.cshtml" />
+    <Content Include="Views\fee_Amount_December\Edit.cshtml" />
+    <Content Include="Views\fee_Amount_December\Index.cshtml" />
+    <Content Include="Views\Cources\Index.cshtml" />
+    <Content Include="Views\playgroup_courses\Create.cshtml" />
+    <Content Include="Views\playgroup_courses\Delete.cshtml" />
+    <Content Include="Views\playgroup_courses\Details.cshtml" />
+    <Content Include="Views\playgroup_courses\Edit.cshtml" />
+    <Content Include="Views\playgroup_courses\Index.cshtml" />
+    <Content Include="Views\classII_courses\Create.cshtml" />
+    <Content Include="Views\classII_courses\Delete.cshtml" />
+    <Content Include="Views\classII_courses\Details.cshtml" />
+    <Content Include="Views\classII_courses\Edit.cshtml" />
+    <Content Include="Views\classII_courses\Index.cshtml" />
+    <Content Include="Views\classI_courses\Create.cshtml" />
+    <Content Include="Views\classI_courses\Delete.cshtml" />
+    <Content Include="Views\classI_courses\Details.cshtml" />
+    <Content Include="Views\classI_courses\Edit.cshtml" />
+    <Content Include="Views\classI_courses\Index.cshtml" />
+    <Content Include="Views\classIII_courses\Create.cshtml" />
+    <Content Include="Views\classIII_courses\Delete.cshtml" />
+    <Content Include="Views\classIII_courses\Details.cshtml" />
+    <Content Include="Views\classIII_courses\Edit.cshtml" />
+    <Content Include="Views\classIII_courses\Index.cshtml" />
+    <Content Include="Views\classIV_courses\Create.cshtml" />
+    <Content Include="Views\classIV_courses\Delete.cshtml" />
+    <Content Include="Views\classIV_courses\Details.cshtml" />
+    <Content Include="Views\classIV_courses\Edit.cshtml" />
+    <Content Include="Views\classIV_courses\Index.cshtml" />
+    <Content Include="Views\classV_courses\Create.cshtml" />
+    <Content Include="Views\classV_courses\Delete.cshtml" />
+    <Content Include="Views\classV_courses\Details.cshtml" />
+    <Content Include="Views\classV_courses\Edit.cshtml" />
+    <Content Include="Views\classV_courses\Index.cshtml" />
+    <Content Include="Views\VI_courses\Create.cshtml" />
+    <Content Include="Views\VI_courses\Delete.cshtml" />
+    <Content Include="Views\VI_courses\Details.cshtml" />
+    <Content Include="Views\VI_courses\Edit.cshtml" />
+    <Content Include="Views\VI_courses\Index.cshtml" />
+    <Content Include="Views\VII_courses\Create.cshtml" />
+    <Content Include="Views\VII_courses\Delete.cshtml" />
+    <Content Include="Views\VII_courses\Details.cshtml" />
+    <Content Include="Views\VII_courses\Edit.cshtml" />
+    <Content Include="Views\VII_courses\Index.cshtml" />
+    <Content Include="Views\VIII_courses\Create.cshtml" />
+    <Content Include="Views\VIII_courses\Delete.cshtml" />
+    <Content Include="Views\VIII_courses\Details.cshtml" />
+    <Content Include="Views\VIII_courses\Edit.cshtml" />
+    <Content Include="Views\VIII_courses\Index.cshtml" />
+    <Content Include="Views\IX_courses\Create.cshtml" />
+    <Content Include="Views\IX_courses\Delete.cshtml" />
+    <Content Include="Views\IX_courses\Details.cshtml" />
+    <Content Include="Views\IX_courses\Edit.cshtml" />
+    <Content Include="Views\IX_courses\Index.cshtml" />
+    <Content Include="Views\X_courses\Create.cshtml" />
+    <Content Include="Views\X_courses\Delete.cshtml" />
+    <Content Include="Views\X_courses\Details.cshtml" />
+    <Content Include="Views\X_courses\Edit.cshtml" />
+    <Content Include="Views\X_courses\Index.cshtml" />
+    <Content Include="Views\timetables\Create.cshtml" />
+    <Content Include="Views\timetables\Delete.cshtml" />
+    <Content Include="Views\timetables\Details.cshtml" />
+    <Content Include="Views\timetables\Edit.cshtml" />
+    <Content Include="Views\timetables\Index.cshtml" />
+    <Content Include="Views\attendance\Index.cshtml" />
+    <Content Include="Views\atten_January\Create.cshtml" />
+    <Content Include="Views\atten_January\Delete.cshtml" />
+    <Content Include="Views\atten_January\Details.cshtml" />
+    <Content Include="Views\atten_January\Edit.cshtml" />
+    <Content Include="Views\atten_January\Index.cshtml" />
+    <Content Include="Views\atten_feb\Create.cshtml" />
+    <Content Include="Views\atten_feb\Delete.cshtml" />
+    <Content Include="Views\atten_feb\Details.cshtml" />
+    <Content Include="Views\atten_feb\Edit.cshtml" />
+    <Content Include="Views\atten_feb\Index.cshtml" />
+    <Content Include="Views\atten_march\Create.cshtml" />
+    <Content Include="Views\atten_march\Delete.cshtml" />
+    <Content Include="Views\atten_march\Details.cshtml" />
+    <Content Include="Views\atten_march\Edit.cshtml" />
+    <Content Include="Views\atten_march\Index.cshtml" />
+    <Content Include="Views\atten_april\Create.cshtml" />
+    <Content Include="Views\atten_april\Delete.cshtml" />
+    <Content Include="Views\atten_april\Details.cshtml" />
+    <Content Include="Views\atten_april\Edit.cshtml" />
+    <Content Include="Views\atten_april\Index.cshtml" />
+    <Content Include="Views\atten_may\Create.cshtml" />
+    <Content Include="Views\atten_may\Delete.cshtml" />
+    <Content Include="Views\atten_may\Details.cshtml" />
+    <Content Include="Views\atten_may\Edit.cshtml" />
+    <Content Include="Views\atten_may\Index.cshtml" />
+    <Content Include="Views\atten_June\Create.cshtml" />
+    <Content Include="Views\atten_June\Delete.cshtml" />
+    <Content Include="Views\atten_June\Details.cshtml" />
+    <Content Include="Views\atten_June\Edit.cshtml" />
+    <Content Include="Views\atten_June\Index.cshtml" />
+    <Content Include="Views\atten_July\Create.cshtml" />
+    <Content Include="Views\atten_July\Delete.cshtml" />
+    <Content Include="Views\atten_July\Details.cshtml" />
+    <Content Include="Views\atten_July\Edit.cshtml" />
+    <Content Include="Views\atten_July\Index.cshtml" />
+    <Content Include="Views\atten_aug\Create.cshtml" />
+    <Content Include="Views\atten_aug\Delete.cshtml" />
+    <Content Include="Views\atten_aug\Details.cshtml" />
+    <Content Include="Views\atten_aug\Edit.cshtml" />
+    <Content Include="Views\atten_aug\Index.cshtml" />
+    <Content Include="Views\atten_sep\Create.cshtml" />
+    <Content Include="Views\atten_sep\Delete.cshtml" />
+    <Content Include="Views\atten_sep\Details.cshtml" />
+    <Content Include="Views\atten_sep\Edit.cshtml" />
+    <Content Include="Views\atten_sep\Index.cshtml" />
+    <Content Include="Views\atten_oct\Create.cshtml" />
+    <Content Include="Views\atten_oct\Delete.cshtml" />
+    <Content Include="Views\atten_oct\Details.cshtml" />
+    <Content Include="Views\atten_oct\Edit.cshtml" />
+    <Content Include="Views\atten_oct\Index.cshtml" />
+    <Content Include="Views\atten_nov\Create.cshtml" />
+    <Content Include="Views\atten_nov\Delete.cshtml" />
+    <Content Include="Views\atten_nov\Details.cshtml" />
+    <Content Include="Views\atten_nov\Edit.cshtml" />
+    <Content Include="Views\atten_nov\Index.cshtml" />
+    <Content Include="Views\atten_dec\Create.cshtml" />
+    <Content Include="Views\atten_dec\Delete.cshtml" />
+    <Content Include="Views\atten_dec\Details.cshtml" />
+    <Content Include="Views\atten_dec\Edit.cshtml" />
+    <Content Include="Views\atten_dec\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="packages.config" />
+    <None Include="Project_Readme.html" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50398</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:50398/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

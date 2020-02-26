@@ -1,0 +1,498 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="schooolmanagementsystemModelStoreContainer" CdmEntityContainer="schooolmanagementsystemEntities">
+    <EntitySetMapping Name="atten_april">
+      <EntityTypeMapping TypeName="schooolmanagementsystemModel.atten_april">
+        <MappingFragment StoreEntitySet="atten_april">
+          <ScalarProperty Name="fee_id" ColumnName="fee_id" />
+          <ScalarProperty Name="total_days" ColumnName="total_days" />
+          <ScalarProperty Name="present" ColumnName="present" />
+          <ScalarProperty Name="Absents" ColumnName="Absents" />
+          <ScalarProperty Name="late" ColumnName="late" />
+          <ScalarProperty Name="leave" ColumnName="leave" />
+          <ScalarProperty Name="stu_fee_id" ColumnName="stu_fee_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="atten_aug">
+      <EntityTypeMapping TypeName="schooolmanagementsystemModel.atten_aug">
+        <MappingFragment StoreEntitySet="atten_aug">
+          <ScalarProperty Name="fee_id" ColumnName="fee_id" />
+          <ScalarProperty Name="total_days" ColumnName="total_days" />
+          <ScalarProperty Name="present" ColumnName="present" />
+          <ScalarProperty Name="Absents" ColumnName="Absents" />
+          <ScalarProperty Name="late" ColumnName="late" />
+          <ScalarProperty Name="leave" ColumnName="leave" />
+          <ScalarProperty Name="stu_fee_id" ColumnName="stu_fee_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="atten_dec">
+      <EntityTypeMapping TypeName="schooolmanagementsystemModel.atten_dec">
+        <MappingFragment StoreEntitySet="atten_dec">
+          <ScalarProperty Name="fee_id" ColumnName="fee_id" />
+          <ScalarProperty Name="total_days" ColumnName="total_days" />
+          <ScalarProperty Name="present" ColumnName="present" />
+          <ScalarProperty Name="Absents" ColumnName="Absents" />
+          <ScalarProperty Name="late" ColumnName="late" />
+          <ScalarProperty Name="leave" ColumnName="leave" />
+          <ScalarProperty Name="stu_fee_id" ColumnName="stu_fee_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="atten_feb">
+      <EntityTypeMapping TypeName="schooolmanagementsystemModel.atten_feb">
+        <MappingFragment StoreEntitySet="atten_feb">
+          <ScalarProperty Name="fee_id" ColumnName="fee_id" />
+          <ScalarProperty Name="total_days" ColumnName="total_days" />
+          <ScalarProperty Name="present" ColumnName="present" />
+          <ScalarProperty Name="Absents" ColumnName="Absents" />
+          <ScalarProperty Name="late" ColumnName="late" />
+          <ScalarProperty Name="leave" ColumnName="leave" />
+          <ScalarProperty Name="stu_fee_id" ColumnName="stu_fee_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="atten_January">
+      <EntityTypeMapping TypeName="schooolmanagementsystemModel.atten_January">
+        <MappingFragment StoreEntitySet="atten_January">
+          <ScalarProperty Name="fee_id" ColumnName="fee_id" />
+          <ScalarProperty Name="total_days" ColumnName="total_days" />
+          <ScalarProperty Name="present" ColumnName="present" />
+          <ScalarProperty Name="Absents" ColumnName="Absents" />
+          <ScalarProperty Name="late" ColumnName="late" />
+          <ScalarProperty Name="leave" ColumnName="leave" />
+          <ScalarProperty Name="stu_fee_id" ColumnName="stu_fee_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="atten_July">
+      <EntityTypeMapping TypeName="schooolmanagementsystemModel.atten_July">
+        <MappingFragment StoreEntitySet="atten_July">
+          <ScalarProperty Name="fee_id" ColumnName="fee_id" />
+          <ScalarProperty Name="total_days" ColumnName="total_days" />
+          <ScalarProperty Name="present" ColumnName="present" />
+          <ScalarProperty Name="Absents" ColumnName="Absents" />
+          <ScalarProperty Name="late" ColumnName="late" />
+          <ScalarProperty Name="leave" ColumnName="leave" />
+          <ScalarProperty Name="stu_fee_id" ColumnName="stu_fee_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="atten_June">
+      <EntityTypeMapping TypeName="schooolmanagementsystemModel.atten_June">
+        <MappingFragment StoreEntitySet="atten_June">
+          <ScalarProperty Name="fee_id" ColumnName="fee_id" />
+          <ScalarProperty Name="total_days" ColumnName="total_days" />
+          <ScalarProperty Name="present" ColumnName="present" />
+          <ScalarProperty Name="Absents" ColumnName="Absents" />
+          <ScalarProperty Name="late" ColumnName="late" />
+          <ScalarProperty Name="leave" ColumnName="leave" />
+          <ScalarProperty Name="stu_fee_id" ColumnName="stu_fee_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="atten_march">
+      <EntityTypeMapping TypeName="schooolmanagementsystemModel.atten_march">
+        <MappingFragment StoreEntitySet="atten_march">
+          <ScalarProperty Name="fee_id" ColumnName="fee_id" />
+          <ScalarProperty Name="total_days" ColumnName="total_days" />
+          <ScalarProperty Name="present" ColumnName="present" />
+          <ScalarProperty Name="Absents" ColumnName="Absents" />
+          <ScalarProperty Name="late" ColumnName="late" />
+          <ScalarProperty Name="leave" ColumnName="leave" />
+          <ScalarProperty Name="stu_fee_id" ColumnName="stu_fee_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="atten_may">
+      <EntityTypeMapping TypeName="schooolmanagementsystemModel.atten_may">
+        <MappingFragment StoreEntitySet="atten_may">
+          <ScalarProperty Name="fee_id" ColumnName="fee_id" />
+          <ScalarProperty Name="total_days" ColumnName="total_days" />
+          <ScalarProperty Name="present" ColumnName="present" />
+          <ScalarProperty Name="Absents" ColumnName="Absents" />
+          <ScalarProperty Name="late" ColumnName="late" />
+          <ScalarProperty Name="leave" ColumnName="leave" />
+          <ScalarProperty Name="stu_fee_id" ColumnName="stu_fee_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="atten_nov">
+      <EntityTypeMapping TypeName="schooolmanagementsystemModel.atten_nov">
+        <MappingFragment StoreEntitySet="atten_nov">
+          <ScalarProperty Name="fee_id" ColumnName="fee_id" />
+          <ScalarProperty Name="total_days" ColumnName="total_days" />
+          <ScalarProperty Name="present" ColumnName="present" />
+          <ScalarProperty Name="Absents" ColumnName="Absents" />
+          <ScalarProperty Name="late" ColumnName="late" />
+          <ScalarProperty Name="leave" ColumnName="leave" />
+          <ScalarProperty Name="stu_fee_id" ColumnName="stu_fee_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="atten_oct">
+      <EntityTypeMapping TypeName="schooolmanagementsystemModel.atten_oct">
+        <MappingFragment StoreEntitySet="atten_oct">
+          <ScalarProperty Name="fee_id" ColumnName="fee_id" />
+          <ScalarProperty Name="total_days" ColumnName="total_days" />
+          <ScalarProperty Name="present" ColumnName="present" />
+          <ScalarProperty Name="Absents" ColumnName="Absents" />
+          <ScalarProperty Name="late" ColumnName="late" />
+          <ScalarProperty Name="leave" ColumnName="leave" />
+          <ScalarProperty Name="stu_fee_id" ColumnName="stu_fee_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="atten_sep">
+      <EntityTypeMapping TypeName="schooolmanagementsystemModel.atten_sep">
+        <MappingFragment StoreEntitySet="atten_sep">
+          <ScalarProperty Name="fee_id" ColumnName="fee_id" />
+          <ScalarProperty Name="total_days" ColumnName="total_days" />
+          <ScalarProperty Name="present" ColumnName="present" />
+          <ScalarProperty Name="Absents" ColumnName="Absents" />
+          <ScalarProperty Name="late" ColumnName="late" />
+          <ScalarProperty Name="leave" ColumnName="leave" />
+          <ScalarProperty Name="stu_fee_id" ColumnName="stu_fee_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="classI_courses">
+      <EntityTypeMapping TypeName="schooolmanagementsystemModel.classI_courses">
+        <MappingFragment StoreEntitySet="classI_courses">
+          <ScalarProperty Name="cous_id" ColumnName="cous_id" />
+          <ScalarProperty Name="cous_name" ColumnName="cous_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="classII_courses">
+      <EntityTypeMapping TypeName="schooolmanagementsystemModel.classII_courses">
+        <MappingFragment StoreEntitySet="classII_courses">
+          <ScalarProperty Name="cous_id" ColumnName="cous_id" />
+          <ScalarProperty Name="cous_name" ColumnName="cous_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="classIII_courses">
+      <EntityTypeMapping TypeName="schooolmanagementsystemModel.classIII_courses">
+        <MappingFragment StoreEntitySet="classIII_courses">
+          <ScalarProperty Name="cous_id" ColumnName="cous_id" />
+          <ScalarProperty Name="cous_name" ColumnName="cous_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="classIV_courses">
+      <EntityTypeMapping TypeName="schooolmanagementsystemModel.classIV_courses">
+        <MappingFragment StoreEntitySet="classIV_courses">
+          <ScalarProperty Name="cous_id" ColumnName="cous_id" />
+          <ScalarProperty Name="cous_name" ColumnName="cous_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="classV_courses">
+      <EntityTypeMapping TypeName="schooolmanagementsystemModel.classV_courses">
+        <MappingFragment StoreEntitySet="classV_courses">
+          <ScalarProperty Name="cous_id" ColumnName="cous_id" />
+          <ScalarProperty Name="cous_name" ColumnName="cous_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="eventsses">
+      <EntityTypeMapping TypeName="schooolmanagementsystemModel.eventss">
+        <MappingFragment StoreEntitySet="eventss">
+          <ScalarProperty Name="enents_id" ColumnName="enents_id" />
+          <ScalarProperty Name="events_name" ColumnName="events_name" />
+          <ScalarProperty Name="event_date" ColumnName="event_date" />
+          <ScalarProperty Name="event_time" ColumnName="event_time" />
+          <ScalarProperty Name="event_day" ColumnName="event_day" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="fee_Amount_April">
+      <EntityTypeMapping TypeName="schooolmanagementsystemModel.fee_Amount_April">
+        <MappingFragment StoreEntitySet="fee_Amount_April">
+          <ScalarProperty Name="fee_id" ColumnName="fee_id" />
+          <ScalarProperty Name="fee_Advance" ColumnName="fee_Advance" />
+          <ScalarProperty Name="Fee_Amount" ColumnName="Fee_Amount" />
+          <ScalarProperty Name="fee_month_name" ColumnName="fee_month_name" />
+          <ScalarProperty Name="fee_status" ColumnName="fee_status" />
+          <ScalarProperty Name="fee_date" ColumnName="fee_date" />
+          <ScalarProperty Name="stu_fee_id" ColumnName="stu_fee_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="fee_Amount_Augest">
+      <EntityTypeMapping TypeName="schooolmanagementsystemModel.fee_Amount_Augest">
+        <MappingFragment StoreEntitySet="fee_Amount_Augest">
+          <ScalarProperty Name="fee_id" ColumnName="fee_id" />
+          <ScalarProperty Name="fee_Advance" ColumnName="fee_Advance" />
+          <ScalarProperty Name="Fee_Amount" ColumnName="Fee_Amount" />
+          <ScalarProperty Name="fee_month_name" ColumnName="fee_month_name" />
+          <ScalarProperty Name="fee_status" ColumnName="fee_status" />
+          <ScalarProperty Name="fee_date" ColumnName="fee_date" />
+          <ScalarProperty Name="stu_fee_id" ColumnName="stu_fee_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="fee_Amount_December">
+      <EntityTypeMapping TypeName="schooolmanagementsystemModel.fee_Amount_December">
+        <MappingFragment StoreEntitySet="fee_Amount_December">
+          <ScalarProperty Name="fee_id" ColumnName="fee_id" />
+          <ScalarProperty Name="fee_Advance" ColumnName="fee_Advance" />
+          <ScalarProperty Name="Fee_Amount" ColumnName="Fee_Amount" />
+          <ScalarProperty Name="fee_month_name" ColumnName="fee_month_name" />
+          <ScalarProperty Name="fee_status" ColumnName="fee_status" />
+          <ScalarProperty Name="fee_date" ColumnName="fee_date" />
+          <ScalarProperty Name="stu_fee_id" ColumnName="stu_fee_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="fee_Amount_February">
+      <EntityTypeMapping TypeName="schooolmanagementsystemModel.fee_Amount_February">
+        <MappingFragment StoreEntitySet="fee_Amount_February">
+          <ScalarProperty Name="fee_id" ColumnName="fee_id" />
+          <ScalarProperty Name="fee_Advance" ColumnName="fee_Advance" />
+          <ScalarProperty Name="Fee_Amount" ColumnName="Fee_Amount" />
+          <ScalarProperty Name="fee_month_name" ColumnName="fee_month_name" />
+          <ScalarProperty Name="fee_status" ColumnName="fee_status" />
+          <ScalarProperty Name="fee_date" ColumnName="fee_date" />
+          <ScalarProperty Name="stu_fee_id" ColumnName="stu_fee_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="fee_Amount_January">
+      <EntityTypeMapping TypeName="schooolmanagementsystemModel.fee_Amount_January">
+        <MappingFragment StoreEntitySet="fee_Amount_January">
+          <ScalarProperty Name="fee_id" ColumnName="fee_id" />
+          <ScalarProperty Name="fee_Advance" ColumnName="fee_Advance" />
+          <ScalarProperty Name="Fee_Amount" ColumnName="Fee_Amount" />
+          <ScalarProperty Name="fee_month_name" ColumnName="fee_month_name" />
+          <ScalarProperty Name="fee_status" ColumnName="fee_status" />
+          <ScalarProperty Name="fee_date" ColumnName="fee_date" />
+          <ScalarProperty Name="stu_fee_id" ColumnName="stu_fee_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="fee_Amount_July">
+      <EntityTypeMapping TypeName="schooolmanagementsystemModel.fee_Amount_July">
+        <MappingFragment StoreEntitySet="fee_Amount_July">
+          <ScalarProperty Name="fee_id" ColumnName="fee_id" />
+          <ScalarProperty Name="fee_Advance" ColumnName="fee_Advance" />
+          <ScalarProperty Name="Fee_Amount" ColumnName="Fee_Amount" />
+          <ScalarProperty Name="fee_month_name" ColumnName="fee_month_name" />
+          <ScalarProperty Name="fee_status" ColumnName="fee_status" />
+          <ScalarProperty Name="fee_date" ColumnName="fee_date" />
+          <ScalarProperty Name="stu_fee_id" ColumnName="stu_fee_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="fee_Amount_June">
+      <EntityTypeMapping TypeName="schooolmanagementsystemModel.fee_Amount_June">
+        <MappingFragment StoreEntitySet="fee_Amount_June">
+          <ScalarProperty Name="fee_id" ColumnName="fee_id" />
+          <ScalarProperty Name="fee_Advance" ColumnName="fee_Advance" />
+          <ScalarProperty Name="Fee_Amount" ColumnName="Fee_Amount" />
+          <ScalarProperty Name="fee_month_name" ColumnName="fee_month_name" />
+          <ScalarProperty Name="fee_status" ColumnName="fee_status" />
+          <ScalarProperty Name="fee_date" ColumnName="fee_date" />
+          <ScalarProperty Name="stu_fee_id" ColumnName="stu_fee_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="fee_Amount_march">
+      <EntityTypeMapping TypeName="schooolmanagementsystemModel.fee_Amount_march">
+        <MappingFragment StoreEntitySet="fee_Amount_march">
+          <ScalarProperty Name="fee_id" ColumnName="fee_id" />
+          <ScalarProperty Name="fee_Advance" ColumnName="fee_Advance" />
+          <ScalarProperty Name="Fee_Amount" ColumnName="Fee_Amount" />
+          <ScalarProperty Name="fee_month_name" ColumnName="fee_month_name" />
+          <ScalarProperty Name="fee_status" ColumnName="fee_status" />
+          <ScalarProperty Name="fee_date" ColumnName="fee_date" />
+          <ScalarProperty Name="stu_fee_id" ColumnName="stu_fee_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="fee_Amount_May">
+      <EntityTypeMapping TypeName="schooolmanagementsystemModel.fee_Amount_May">
+        <MappingFragment StoreEntitySet="fee_Amount_May">
+          <ScalarProperty Name="fee_id" ColumnName="fee_id" />
+          <ScalarProperty Name="fee_Advance" ColumnName="fee_Advance" />
+          <ScalarProperty Name="Fee_Amount" ColumnName="Fee_Amount" />
+          <ScalarProperty Name="fee_month_name" ColumnName="fee_month_name" />
+          <ScalarProperty Name="fee_status" ColumnName="fee_status" />
+          <ScalarProperty Name="fee_date" ColumnName="fee_date" />
+          <ScalarProperty Name="stu_fee_id" ColumnName="stu_fee_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="fee_Amount_November">
+      <EntityTypeMapping TypeName="schooolmanagementsystemModel.fee_Amount_November">
+        <MappingFragment StoreEntitySet="fee_Amount_November">
+          <ScalarProperty Name="fee_id" ColumnName="fee_id" />
+          <ScalarProperty Name="fee_Advance" ColumnName="fee_Advance" />
+          <ScalarProperty Name="Fee_Amount" ColumnName="Fee_Amount" />
+          <ScalarProperty Name="fee_month_name" ColumnName="fee_month_name" />
+          <ScalarProperty Name="fee_status" ColumnName="fee_status" />
+          <ScalarProperty Name="fee_date" ColumnName="fee_date" />
+          <ScalarProperty Name="stu_fee_id" ColumnName="stu_fee_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="fee_Amount_Octuber">
+      <EntityTypeMapping TypeName="schooolmanagementsystemModel.fee_Amount_Octuber">
+        <MappingFragment StoreEntitySet="fee_Amount_Octuber">
+          <ScalarProperty Name="fee_id" ColumnName="fee_id" />
+          <ScalarProperty Name="fee_Advance" ColumnName="fee_Advance" />
+          <ScalarProperty Name="Fee_Amount" ColumnName="Fee_Amount" />
+          <ScalarProperty Name="fee_month_name" ColumnName="fee_month_name" />
+          <ScalarProperty Name="fee_status" ColumnName="fee_status" />
+          <ScalarProperty Name="fee_date" ColumnName="fee_date" />
+          <ScalarProperty Name="stu_fee_id" ColumnName="stu_fee_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="fee_Amount_September">
+      <EntityTypeMapping TypeName="schooolmanagementsystemModel.fee_Amount_September">
+        <MappingFragment StoreEntitySet="fee_Amount_September">
+          <ScalarProperty Name="fee_id" ColumnName="fee_id" />
+          <ScalarProperty Name="fee_Advance" ColumnName="fee_Advance" />
+          <ScalarProperty Name="Fee_Amount" ColumnName="Fee_Amount" />
+          <ScalarProperty Name="fee_month_name" ColumnName="fee_month_name" />
+          <ScalarProperty Name="fee_status" ColumnName="fee_status" />
+          <ScalarProperty Name="fee_date" ColumnName="fee_date" />
+          <ScalarProperty Name="stu_fee_id" ColumnName="stu_fee_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IX_courses">
+      <EntityTypeMapping TypeName="schooolmanagementsystemModel.IX_courses">
+        <MappingFragment StoreEntitySet="IX_courses">
+          <ScalarProperty Name="cous_id" ColumnName="cous_id" />
+          <ScalarProperty Name="cous_name" ColumnName="cous_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="playgroup_courses">
+      <EntityTypeMapping TypeName="schooolmanagementsystemModel.playgroup_courses">
+        <MappingFragment StoreEntitySet="playgroup_courses">
+          <ScalarProperty Name="cous_id" ColumnName="cous_id" />
+          <ScalarProperty Name="cous_name" ColumnName="cous_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_admin">
+      <EntityTypeMapping TypeName="schooolmanagementsystemModel.tbl_admin">
+        <MappingFragment StoreEntitySet="tbl_admin">
+          <ScalarProperty Name="Ad_id" ColumnName="Ad_id" />
+          <ScalarProperty Name="Ad_name" ColumnName="Ad_name" />
+          <ScalarProperty Name="Ad_password" ColumnName="Ad_password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_enrolment">
+      <EntityTypeMapping TypeName="schooolmanagementsystemModel.tbl_enrolment">
+        <MappingFragment StoreEntitySet="tbl_enrolment">
+          <ScalarProperty Name="classs" ColumnName="classs" />
+          <ScalarProperty Name="Stu_id" ColumnName="Stu_id" />
+          <ScalarProperty Name="Stu_f_name" ColumnName="Stu_f_name" />
+          <ScalarProperty Name="Stu_l_name" ColumnName="Stu_l_name" />
+          <ScalarProperty Name="Stu_father_name" ColumnName="Stu_father_name" />
+          <ScalarProperty Name="Stu_father_mobile_Number" ColumnName="Stu_father_mobile_Number" />
+          <ScalarProperty Name="Stu_father_cnic" ColumnName="Stu_father_cnic" />
+          <ScalarProperty Name="Stu_religion" ColumnName="Stu_religion" />
+          <ScalarProperty Name="Stu_gender" ColumnName="Stu_gender" />
+          <ScalarProperty Name="Stu_contact" ColumnName="Stu_contact" />
+          <ScalarProperty Name="Stu_address" ColumnName="Stu_address" />
+          <ScalarProperty Name="Stu_date_of_birth" ColumnName="Stu_date_of_birth" />
+          <ScalarProperty Name="Stu_nationality" ColumnName="Stu_nationality" />
+          <ScalarProperty Name="Stu_birth_place" ColumnName="Stu_birth_place" />
+          <ScalarProperty Name="Stu_Emergency_contact" ColumnName="Stu_Emergency_contact" />
+          <ScalarProperty Name="Stu_city" ColumnName="Stu_city" />
+          <ScalarProperty Name="Stu_email_address" ColumnName="Stu_email_address" />
+          <ScalarProperty Name="Stu_country" ColumnName="Stu_country" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_registration">
+      <EntityTypeMapping TypeName="schooolmanagementsystemModel.tbl_registration">
+        <MappingFragment StoreEntitySet="tbl_registration">
+          <ScalarProperty Name="Stu_reg_id" ColumnName="Stu_reg_id" />
+          <ScalarProperty Name="Stu_f_name" ColumnName="Stu_f_name" />
+          <ScalarProperty Name="Stu_l_name" ColumnName="Stu_l_name" />
+          <ScalarProperty Name="Stu_father_name" ColumnName="Stu_father_name" />
+          <ScalarProperty Name="stu_father_cnic" ColumnName="stu_father_cnic" />
+          <ScalarProperty Name="stu_nationality" ColumnName="stu_nationality" />
+          <ScalarProperty Name="stu_reg_date" ColumnName="stu_reg_date" />
+          <ScalarProperty Name="Stu_gender" ColumnName="Stu_gender" />
+          <ScalarProperty Name="Stu_address" ColumnName="Stu_address" />
+          <ScalarProperty Name="stu_contact" ColumnName="stu_contact" />
+          <ScalarProperty Name="stu_A_Contact" ColumnName="stu_A_Contact" />
+          <ScalarProperty Name="stu_date_of_birth" ColumnName="stu_date_of_birth" />
+          <ScalarProperty Name="Stu_religion" ColumnName="Stu_religion" />
+          <ScalarProperty Name="stu_class" ColumnName="stu_class" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="teachers">
+      <EntityTypeMapping TypeName="schooolmanagementsystemModel.teacher">
+        <MappingFragment StoreEntitySet="teacher">
+          <ScalarProperty Name="teacher_id" ColumnName="teacher_id" />
+          <ScalarProperty Name="teacher_name" ColumnName="teacher_name" />
+          <ScalarProperty Name="Teacherjoin_date" ColumnName="Teacherjoin_date" />
+          <ScalarProperty Name="Qualification" ColumnName="Qualification" />
+          <ScalarProperty Name="Teaching_course" ColumnName="Teaching_course" />
+          <ScalarProperty Name="teacher_contact" ColumnName="teacher_contact" />
+          <ScalarProperty Name="teacher_monthly_salary" ColumnName="teacher_monthly_salary" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="timetables">
+      <EntityTypeMapping TypeName="schooolmanagementsystemModel.timetable">
+        <MappingFragment StoreEntitySet="timetable">
+          <ScalarProperty Name="table_id" ColumnName="table_id" />
+          <ScalarProperty Name="table_day" ColumnName="table_day" />
+          <ScalarProperty Name="table_session1" ColumnName="table_session1" />
+          <ScalarProperty Name="table_session2" ColumnName="table_session2" />
+          <ScalarProperty Name="table_session3" ColumnName="table_session3" />
+          <ScalarProperty Name="table_session4" ColumnName="table_session4" />
+          <ScalarProperty Name="table_session5" ColumnName="table_session5" />
+          <ScalarProperty Name="table_session6" ColumnName="table_session6" />
+          <ScalarProperty Name="table_session7" ColumnName="table_session7" />
+          <ScalarProperty Name="table_session8" ColumnName="table_session8" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VI_courses">
+      <EntityTypeMapping TypeName="schooolmanagementsystemModel.VI_courses">
+        <MappingFragment StoreEntitySet="VI_courses">
+          <ScalarProperty Name="cous_id" ColumnName="cous_id" />
+          <ScalarProperty Name="cous_name" ColumnName="cous_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VII_courses">
+      <EntityTypeMapping TypeName="schooolmanagementsystemModel.VII_courses">
+        <MappingFragment StoreEntitySet="VII_courses">
+          <ScalarProperty Name="cous_id" ColumnName="cous_id" />
+          <ScalarProperty Name="cous_name" ColumnName="cous_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VIII_courses">
+      <EntityTypeMapping TypeName="schooolmanagementsystemModel.VIII_courses">
+        <MappingFragment StoreEntitySet="VIII_courses">
+          <ScalarProperty Name="cous_id" ColumnName="cous_id" />
+          <ScalarProperty Name="cous_name" ColumnName="cous_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="X_courses">
+      <EntityTypeMapping TypeName="schooolmanagementsystemModel.X_courses">
+        <MappingFragment StoreEntitySet="X_courses">
+          <ScalarProperty Name="cous_id" ColumnName="cous_id" />
+          <ScalarProperty Name="cous_name" ColumnName="cous_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

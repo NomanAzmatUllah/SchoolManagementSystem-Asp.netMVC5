@@ -1,0 +1,53 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+<div>
+    <h2>Courses</h2>
+</div>
+<style>
+    .containerr {
+        margin-left: 439px;
+    }
+
+    .btn {
+        background-color: cornflowerblue;
+        color: white;
+    }
+
+        .btn:hover {
+            background-color: white;
+            color: cornflowerblue;
+        }
+
+    h2 {
+        background-color: cornflowerblue;
+        color: white;
+        text-align: center;
+        font-family: Calibri;
+    }
+</style>
+
+<div class="containerr">
+
+    <input class="btn btn-block btn-default" type="button" value="PlayGroup" onclick="location.href='@Url.Action("Create", "playgroup_courses")';return false;" />
+    <input class="btn btn-block btn-default" type="button" value="Class I" onclick="location.href='@Url.Action("Create", "classI_courses")';return false;" />
+    <input class="btn btn-block btn-default" type="button" value="Class II" onclick="location.href='@Url.Action("Create", "classII_courses")';return false;" />
+    <input class="btn btn-block btn-default" type="button" value="Class III" onclick="location.href='@Url.Action("Create", "classIII_courses")';return false;" />
+    <input class="btn btn-block btn-default" type="button" value="Class IV" onclick="location.href='@Url.Action("Create", "classIV_courses")';return false;" />
+    <input class="btn btn-block btn-default" type="button" value="Class V" onclick="location.href='@Url.Action("Create", "classV_courses")';return false;" />
+    <input class="btn btn-block btn-default" type="button" value="Class VI" onclick="location.href='@Url.Action("Create", "VI_courses")';return false;" />
+    <input class="btn btn-block btn-default" type="button" value="Class VII" onclick="location.href='@Url.Action("Create", "VII_courses")';return false;" />
+    <input class="btn btn-block btn-default" type="button" value="Class VIII" onclick="location.href='@Url.Action("Create", "VIII_courses")';return false;" />
+    <input class="btn btn-block btn-default" type="button" value="Class IX" onclick="location.href='@Url.Action("Create", "IX_courses")';return false;" />
+    <input class="btn btn-block btn-default" type="button" value="Class X" onclick="location.href='@Url.Action("Create", "X_courses")';return false;" />
+
+
+</div>
+
+<div>
+    <img class="img-responsive" style="height: 318px;margin-top:-420px;margin-left: -65px;" src="~/images/Baby-Activities-551x374.jpg" />
+    <img class="img-responsive" style="height: 348px;margin-top: -324px; margin-left: 720px;opacity: 0.4;" src="~/images/explotar-la-creatividad-del-niño.jpg"/>
+</div>
+
+

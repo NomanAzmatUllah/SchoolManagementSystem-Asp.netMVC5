@@ -1,0 +1,174 @@
+﻿@model WebApplication5.Models.tbl_registration
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<style>
+    .heading {
+        height: 45px;
+        background-color: dodgerblue;
+        color: white;
+        width: 240px;
+        border-radius: 14px;
+        // margin-left: 380px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .container1 {
+        margin-top: -400px;
+    }
+
+    .btn {
+        color: dodgerblue;
+        background-color: white;
+        text-decoration: none;
+    }
+
+        .btn:hover {
+            color: white;
+            background-color: dodgerblue;
+        }
+
+    .left {
+        margin-left: 480px;
+    }
+
+    .image {
+        margin-left: 802px;
+        height: 308px;
+        margin-top: -257px;
+    }
+</style>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <br />
+
+    <div class="heading">
+
+        <h3 style="color:white; padding-left: 6px; padding-top: 4px;font-family: calibri">Admission Form</h3>
+    </div>
+    <br />
+    <br />
+    <img style="margin-left: 573px;height: 402px;" src="~/images/kisspng-pre-school-child-care-school-district-children-s-paradise-5adc1f0d6c9884.6928138715243753094448.png" />
+    <div class="container1">
+        <div class="form-horizontal">
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            <div class="form-group">
+                @Html.LabelFor(model => model.Stu_f_name, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Stu_f_name, new { htmlAttributes = new { @class = "form-control", placeholder = "First-Name" } })
+                    @Html.ValidationMessageFor(model => model.Stu_f_name, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Stu_l_name, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Stu_l_name, new { htmlAttributes = new { @class = "form-control", placeholder = "Last-Name" } })
+                    @Html.ValidationMessageFor(model => model.Stu_l_name, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Stu_father_name, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Stu_father_name, new { htmlAttributes = new { @class = "form-control", placeholder = "Father-Name" } })
+                    @Html.ValidationMessageFor(model => model.Stu_father_name, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.stu_father_cnic, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.stu_father_cnic, new { htmlAttributes = new { @class = "form-control", placeholder = "Father-Cnic" } })
+                    @Html.ValidationMessageFor(model => model.stu_father_cnic, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.stu_nationality, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.stu_nationality, new { htmlAttributes = new { @class = "form-control", placeholder = "Nationality" } })
+                    @Html.ValidationMessageFor(model => model.stu_nationality, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.stu_reg_date, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.stu_reg_date, new { htmlAttributes = new { @class = "form-control", placeholder = "R-Date" } })
+                    @Html.ValidationMessageFor(model => model.stu_reg_date, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Stu_gender, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Stu_gender, new { htmlAttributes = new { @class = "form-control", placeholder = "Gender" } })
+                    @Html.ValidationMessageFor(model => model.Stu_gender, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Stu_address, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Stu_address, new { htmlAttributes = new { @class = "form-control", placeholder = "Address" } })
+                    @Html.ValidationMessageFor(model => model.Stu_address, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.stu_contact, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.stu_contact, new { htmlAttributes = new { @class = "form-control", placeholder = "Contact" } })
+                    @Html.ValidationMessageFor(model => model.stu_contact, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.stu_A_Contact, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.stu_A_Contact, new { htmlAttributes = new { @class = "form-control", placeholder = "A-Contact" } })
+                    @Html.ValidationMessageFor(model => model.stu_A_Contact, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.stu_date_of_birth, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.stu_date_of_birth, new { htmlAttributes = new { @class = "form-control", placeholder = "Date Of Birth" } })
+                    @Html.ValidationMessageFor(model => model.stu_date_of_birth, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Stu_religion, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Stu_religion, new { htmlAttributes = new { @class = "form-control", placeholder = "Religion" } })
+                    @Html.ValidationMessageFor(model => model.Stu_religion, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.stu_class, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.stu_class, new { htmlAttributes = new { @class = "form-control", placeholder = "Class" } })
+                    @Html.ValidationMessageFor(model => model.stu_class, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Submit" class="btn btn-block btn-default" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <img class="image" src="~/images/1409358.png" />
+}

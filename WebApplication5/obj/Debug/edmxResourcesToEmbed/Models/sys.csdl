@@ -1,0 +1,931 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="schooolmanagementsystemModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="atten_april">
+    <Key>
+      <PropertyRef Name="fee_id" />
+    </Key>
+    <Property Name="fee_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="total_days" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="present" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Absents" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="late" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="leave" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="stu_fee_id" Type="Int32" />
+    <NavigationProperty Name="tbl_enrolment" Relationship="Self.FK__atten_apr__stu_f__5DCAEF64" FromRole="atten_april" ToRole="tbl_enrolment" />
+  </EntityType>
+  <EntityType Name="atten_aug">
+    <Key>
+      <PropertyRef Name="fee_id" />
+    </Key>
+    <Property Name="fee_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="total_days" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="present" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Absents" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="late" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="leave" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="stu_fee_id" Type="Int32" />
+    <NavigationProperty Name="tbl_enrolment" Relationship="Self.FK__atten_aug__stu_f__693CA210" FromRole="atten_aug" ToRole="tbl_enrolment" />
+  </EntityType>
+  <EntityType Name="atten_dec">
+    <Key>
+      <PropertyRef Name="fee_id" />
+    </Key>
+    <Property Name="fee_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="total_days" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="present" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Absents" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="late" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="leave" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="stu_fee_id" Type="Int32" />
+    <NavigationProperty Name="tbl_enrolment" Relationship="Self.FK__atten_dec__stu_f__74AE54BC" FromRole="atten_dec" ToRole="tbl_enrolment" />
+  </EntityType>
+  <EntityType Name="atten_feb">
+    <Key>
+      <PropertyRef Name="fee_id" />
+    </Key>
+    <Property Name="fee_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="total_days" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="present" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Absents" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="late" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="leave" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="stu_fee_id" Type="Int32" />
+    <NavigationProperty Name="tbl_enrolment" Relationship="Self.FK__atten_feb__stu_f__5812160E" FromRole="atten_feb" ToRole="tbl_enrolment" />
+  </EntityType>
+  <EntityType Name="atten_January">
+    <Key>
+      <PropertyRef Name="fee_id" />
+    </Key>
+    <Property Name="fee_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="total_days" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="present" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Absents" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="late" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="leave" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="stu_fee_id" Type="Int32" />
+    <NavigationProperty Name="tbl_enrolment" Relationship="Self.FK__atten_Jan__stu_f__5535A963" FromRole="atten_January" ToRole="tbl_enrolment" />
+  </EntityType>
+  <EntityType Name="atten_July">
+    <Key>
+      <PropertyRef Name="fee_id" />
+    </Key>
+    <Property Name="fee_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="total_days" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="present" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Absents" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="late" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="leave" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="stu_fee_id" Type="Int32" />
+    <NavigationProperty Name="tbl_enrolment" Relationship="Self.FK__atten_Jul__stu_f__66603565" FromRole="atten_July" ToRole="tbl_enrolment" />
+  </EntityType>
+  <EntityType Name="atten_June">
+    <Key>
+      <PropertyRef Name="fee_id" />
+    </Key>
+    <Property Name="fee_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="total_days" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="present" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Absents" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="late" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="leave" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="stu_fee_id" Type="Int32" />
+    <NavigationProperty Name="tbl_enrolment" Relationship="Self.FK__atten_Jun__stu_f__6383C8BA" FromRole="atten_June" ToRole="tbl_enrolment" />
+  </EntityType>
+  <EntityType Name="atten_march">
+    <Key>
+      <PropertyRef Name="fee_id" />
+    </Key>
+    <Property Name="fee_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="total_days" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="present" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Absents" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="late" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="leave" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="stu_fee_id" Type="Int32" />
+    <NavigationProperty Name="tbl_enrolment" Relationship="Self.FK__atten_mar__stu_f__5AEE82B9" FromRole="atten_march" ToRole="tbl_enrolment" />
+  </EntityType>
+  <EntityType Name="atten_may">
+    <Key>
+      <PropertyRef Name="fee_id" />
+    </Key>
+    <Property Name="fee_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="total_days" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="present" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Absents" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="late" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="leave" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="stu_fee_id" Type="Int32" />
+    <NavigationProperty Name="tbl_enrolment" Relationship="Self.FK__atten_may__stu_f__60A75C0F" FromRole="atten_may" ToRole="tbl_enrolment" />
+  </EntityType>
+  <EntityType Name="atten_nov">
+    <Key>
+      <PropertyRef Name="fee_id" />
+    </Key>
+    <Property Name="fee_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="total_days" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="present" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Absents" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="late" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="leave" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="stu_fee_id" Type="Int32" />
+    <NavigationProperty Name="tbl_enrolment" Relationship="Self.FK__atten_nov__stu_f__71D1E811" FromRole="atten_nov" ToRole="tbl_enrolment" />
+  </EntityType>
+  <EntityType Name="atten_oct">
+    <Key>
+      <PropertyRef Name="fee_id" />
+    </Key>
+    <Property Name="fee_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="total_days" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="present" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Absents" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="late" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="leave" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="stu_fee_id" Type="Int32" />
+    <NavigationProperty Name="tbl_enrolment" Relationship="Self.FK__atten_oct__stu_f__6EF57B66" FromRole="atten_oct" ToRole="tbl_enrolment" />
+  </EntityType>
+  <EntityType Name="atten_sep">
+    <Key>
+      <PropertyRef Name="fee_id" />
+    </Key>
+    <Property Name="fee_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="total_days" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="present" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Absents" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="late" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="leave" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="stu_fee_id" Type="Int32" />
+    <NavigationProperty Name="tbl_enrolment" Relationship="Self.FK__atten_sep__stu_f__6C190EBB" FromRole="atten_sep" ToRole="tbl_enrolment" />
+  </EntityType>
+  <EntityType Name="classI_courses">
+    <Key>
+      <PropertyRef Name="cous_id" />
+    </Key>
+    <Property Name="cous_id" Type="Int32" Nullable="false" />
+    <Property Name="cous_name" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="classII_courses">
+    <Key>
+      <PropertyRef Name="cous_id" />
+    </Key>
+    <Property Name="cous_id" Type="Int32" Nullable="false" />
+    <Property Name="cous_name" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="classIII_courses">
+    <Key>
+      <PropertyRef Name="cous_id" />
+    </Key>
+    <Property Name="cous_id" Type="Int32" Nullable="false" />
+    <Property Name="cous_name" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="classIV_courses">
+    <Key>
+      <PropertyRef Name="cous_id" />
+    </Key>
+    <Property Name="cous_id" Type="Int32" Nullable="false" />
+    <Property Name="cous_name" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="classV_courses">
+    <Key>
+      <PropertyRef Name="cous_id" />
+    </Key>
+    <Property Name="cous_id" Type="Int32" Nullable="false" />
+    <Property Name="cous_name" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="eventss">
+    <Key>
+      <PropertyRef Name="enents_id" />
+    </Key>
+    <Property Name="enents_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="events_name" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="event_date" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="event_time" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="event_day" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="fee_Amount_April">
+    <Key>
+      <PropertyRef Name="fee_id" />
+    </Key>
+    <Property Name="fee_id" Type="Int32" Nullable="false" />
+    <Property Name="fee_Advance" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Fee_Amount" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="fee_month_name" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="fee_status" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="fee_date" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="stu_fee_id" Type="Int32" />
+    <NavigationProperty Name="tbl_enrolment" Relationship="Self.FK__fee_Amoun__stu_f__1ED998B2" FromRole="fee_Amount_April" ToRole="tbl_enrolment" />
+  </EntityType>
+  <EntityType Name="fee_Amount_Augest">
+    <Key>
+      <PropertyRef Name="fee_id" />
+    </Key>
+    <Property Name="fee_id" Type="Int32" Nullable="false" />
+    <Property Name="fee_Advance" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Fee_Amount" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="fee_month_name" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="fee_status" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="fee_date" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="stu_fee_id" Type="Int32" />
+    <NavigationProperty Name="tbl_enrolment" Relationship="Self.FK__fee_Amoun__stu_f__2B3F6F97" FromRole="fee_Amount_Augest" ToRole="tbl_enrolment" />
+  </EntityType>
+  <EntityType Name="fee_Amount_December">
+    <Key>
+      <PropertyRef Name="fee_id" />
+    </Key>
+    <Property Name="fee_id" Type="Int32" Nullable="false" />
+    <Property Name="fee_Advance" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Fee_Amount" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="fee_month_name" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="fee_status" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="fee_date" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="stu_fee_id" Type="Int32" />
+    <NavigationProperty Name="tbl_enrolment" Relationship="Self.FK__fee_Amoun__stu_f__36B12243" FromRole="fee_Amount_December" ToRole="tbl_enrolment" />
+  </EntityType>
+  <EntityType Name="fee_Amount_February">
+    <Key>
+      <PropertyRef Name="fee_id" />
+    </Key>
+    <Property Name="fee_id" Type="Int32" Nullable="false" />
+    <Property Name="fee_Advance" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Fee_Amount" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="fee_month_name" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="fee_status" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="fee_date" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="stu_fee_id" Type="Int32" />
+    <NavigationProperty Name="tbl_enrolment" Relationship="Self.FK__fee_Amoun__stu_f__1920BF5C" FromRole="fee_Amount_February" ToRole="tbl_enrolment" />
+  </EntityType>
+  <EntityType Name="fee_Amount_January">
+    <Key>
+      <PropertyRef Name="fee_id" />
+    </Key>
+    <Property Name="fee_id" Type="Int32" Nullable="false" />
+    <Property Name="fee_Advance" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Fee_Amount" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="fee_month_name" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="fee_status" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="fee_date" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="stu_fee_id" Type="Int32" />
+    <NavigationProperty Name="tbl_enrolment" Relationship="Self.FK__fee_Amoun__stu_f__164452B1" FromRole="fee_Amount_January" ToRole="tbl_enrolment" />
+  </EntityType>
+  <EntityType Name="fee_Amount_July">
+    <Key>
+      <PropertyRef Name="fee_id" />
+    </Key>
+    <Property Name="fee_id" Type="Int32" Nullable="false" />
+    <Property Name="fee_Advance" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Fee_Amount" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="fee_month_name" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="fee_status" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="fee_date" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="stu_fee_id" Type="Int32" />
+    <NavigationProperty Name="tbl_enrolment" Relationship="Self.FK__fee_Amoun__stu_f__286302EC" FromRole="fee_Amount_July" ToRole="tbl_enrolment" />
+  </EntityType>
+  <EntityType Name="fee_Amount_June">
+    <Key>
+      <PropertyRef Name="fee_id" />
+    </Key>
+    <Property Name="fee_id" Type="Int32" Nullable="false" />
+    <Property Name="fee_Advance" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Fee_Amount" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="fee_month_name" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="fee_status" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="fee_date" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="stu_fee_id" Type="Int32" />
+    <NavigationProperty Name="tbl_enrolment" Relationship="Self.FK__fee_Amoun__stu_f__24927208" FromRole="fee_Amount_June" ToRole="tbl_enrolment" />
+  </EntityType>
+  <EntityType Name="fee_Amount_march">
+    <Key>
+      <PropertyRef Name="fee_id" />
+    </Key>
+    <Property Name="fee_id" Type="Int32" Nullable="false" />
+    <Property Name="fee_Advance" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Fee_Amount" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="fee_month_name" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="fee_status" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="fee_date" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="stu_fee_id" Type="Int32" />
+    <NavigationProperty Name="tbl_enrolment" Relationship="Self.FK__fee_Amoun__stu_f__1BFD2C07" FromRole="fee_Amount_march" ToRole="tbl_enrolment" />
+  </EntityType>
+  <EntityType Name="fee_Amount_May">
+    <Key>
+      <PropertyRef Name="fee_id" />
+    </Key>
+    <Property Name="fee_id" Type="Int32" Nullable="false" />
+    <Property Name="fee_Advance" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Fee_Amount" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="fee_month_name" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="fee_status" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="fee_date" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="stu_fee_id" Type="Int32" />
+    <NavigationProperty Name="tbl_enrolment" Relationship="Self.FK__fee_Amoun__stu_f__21B6055D" FromRole="fee_Amount_May" ToRole="tbl_enrolment" />
+  </EntityType>
+  <EntityType Name="fee_Amount_November">
+    <Key>
+      <PropertyRef Name="fee_id" />
+    </Key>
+    <Property Name="fee_id" Type="Int32" Nullable="false" />
+    <Property Name="fee_Advance" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Fee_Amount" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="fee_month_name" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="fee_status" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="fee_date" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="stu_fee_id" Type="Int32" />
+    <NavigationProperty Name="tbl_enrolment" Relationship="Self.FK__fee_Amoun__stu_f__33D4B598" FromRole="fee_Amount_November" ToRole="tbl_enrolment" />
+  </EntityType>
+  <EntityType Name="fee_Amount_Octuber">
+    <Key>
+      <PropertyRef Name="fee_id" />
+    </Key>
+    <Property Name="fee_id" Type="Int32" Nullable="false" />
+    <Property Name="fee_Advance" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Fee_Amount" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="fee_month_name" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="fee_status" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="fee_date" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="stu_fee_id" Type="Int32" />
+    <NavigationProperty Name="tbl_enrolment" Relationship="Self.FK__fee_Amoun__stu_f__30F848ED" FromRole="fee_Amount_Octuber" ToRole="tbl_enrolment" />
+  </EntityType>
+  <EntityType Name="fee_Amount_September">
+    <Key>
+      <PropertyRef Name="fee_id" />
+    </Key>
+    <Property Name="fee_id" Type="Int32" Nullable="false" />
+    <Property Name="fee_Advance" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Fee_Amount" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="fee_month_name" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="fee_status" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="fee_date" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="stu_fee_id" Type="Int32" />
+    <NavigationProperty Name="tbl_enrolment" Relationship="Self.FK__fee_Amoun__stu_f__2E1BDC42" FromRole="fee_Amount_September" ToRole="tbl_enrolment" />
+  </EntityType>
+  <EntityType Name="IX_courses">
+    <Key>
+      <PropertyRef Name="cous_id" />
+    </Key>
+    <Property Name="cous_id" Type="Int32" Nullable="false" />
+    <Property Name="cous_name" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="playgroup_courses">
+    <Key>
+      <PropertyRef Name="cous_id" />
+    </Key>
+    <Property Name="cous_id" Type="Int32" Nullable="false" />
+    <Property Name="cous_name" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_admin">
+    <Key>
+      <PropertyRef Name="Ad_id" />
+    </Key>
+    <Property Name="Ad_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Ad_name" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Ad_password" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_enrolment">
+    <Key>
+      <PropertyRef Name="Stu_id" />
+    </Key>
+    <Property Name="Stu_id" Type="Int32" Nullable="false" />
+    <Property Name="Stu_f_name" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Stu_l_name" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Stu_father_name" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Stu_father_mobile_Number" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Stu_father_cnic" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Stu_religion" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Stu_gender" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Stu_contact" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Stu_address" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Stu_date_of_birth" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Stu_nationality" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Stu_birth_place" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Stu_Emergency_contact" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Stu_city" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Stu_email_address" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Stu_country" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="class" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="atten_april" Relationship="Self.FK__atten_apr__stu_f__5DCAEF64" FromRole="tbl_enrolment" ToRole="atten_april" />
+    <NavigationProperty Name="atten_aug" Relationship="Self.FK__atten_aug__stu_f__693CA210" FromRole="tbl_enrolment" ToRole="atten_aug" />
+    <NavigationProperty Name="atten_dec" Relationship="Self.FK__atten_dec__stu_f__74AE54BC" FromRole="tbl_enrolment" ToRole="atten_dec" />
+    <NavigationProperty Name="atten_feb" Relationship="Self.FK__atten_feb__stu_f__5812160E" FromRole="tbl_enrolment" ToRole="atten_feb" />
+    <NavigationProperty Name="atten_January" Relationship="Self.FK__atten_Jan__stu_f__5535A963" FromRole="tbl_enrolment" ToRole="atten_January" />
+    <NavigationProperty Name="atten_July" Relationship="Self.FK__atten_Jul__stu_f__66603565" FromRole="tbl_enrolment" ToRole="atten_July" />
+    <NavigationProperty Name="atten_June" Relationship="Self.FK__atten_Jun__stu_f__6383C8BA" FromRole="tbl_enrolment" ToRole="atten_June" />
+    <NavigationProperty Name="atten_march" Relationship="Self.FK__atten_mar__stu_f__5AEE82B9" FromRole="tbl_enrolment" ToRole="atten_march" />
+    <NavigationProperty Name="atten_may" Relationship="Self.FK__atten_may__stu_f__60A75C0F" FromRole="tbl_enrolment" ToRole="atten_may" />
+    <NavigationProperty Name="atten_nov" Relationship="Self.FK__atten_nov__stu_f__71D1E811" FromRole="tbl_enrolment" ToRole="atten_nov" />
+    <NavigationProperty Name="atten_oct" Relationship="Self.FK__atten_oct__stu_f__6EF57B66" FromRole="tbl_enrolment" ToRole="atten_oct" />
+    <NavigationProperty Name="atten_sep" Relationship="Self.FK__atten_sep__stu_f__6C190EBB" FromRole="tbl_enrolment" ToRole="atten_sep" />
+    <NavigationProperty Name="fee_Amount_April" Relationship="Self.FK__fee_Amoun__stu_f__1ED998B2" FromRole="tbl_enrolment" ToRole="fee_Amount_April" />
+    <NavigationProperty Name="fee_Amount_Augest" Relationship="Self.FK__fee_Amoun__stu_f__2B3F6F97" FromRole="tbl_enrolment" ToRole="fee_Amount_Augest" />
+    <NavigationProperty Name="fee_Amount_December" Relationship="Self.FK__fee_Amoun__stu_f__36B12243" FromRole="tbl_enrolment" ToRole="fee_Amount_December" />
+    <NavigationProperty Name="fee_Amount_February" Relationship="Self.FK__fee_Amoun__stu_f__1920BF5C" FromRole="tbl_enrolment" ToRole="fee_Amount_February" />
+    <NavigationProperty Name="fee_Amount_January" Relationship="Self.FK__fee_Amoun__stu_f__164452B1" FromRole="tbl_enrolment" ToRole="fee_Amount_January" />
+    <NavigationProperty Name="fee_Amount_July" Relationship="Self.FK__fee_Amoun__stu_f__286302EC" FromRole="tbl_enrolment" ToRole="fee_Amount_July" />
+    <NavigationProperty Name="fee_Amount_June" Relationship="Self.FK__fee_Amoun__stu_f__24927208" FromRole="tbl_enrolment" ToRole="fee_Amount_June" />
+    <NavigationProperty Name="fee_Amount_march" Relationship="Self.FK__fee_Amoun__stu_f__1BFD2C07" FromRole="tbl_enrolment" ToRole="fee_Amount_march" />
+    <NavigationProperty Name="fee_Amount_May" Relationship="Self.FK__fee_Amoun__stu_f__21B6055D" FromRole="tbl_enrolment" ToRole="fee_Amount_May" />
+    <NavigationProperty Name="fee_Amount_November" Relationship="Self.FK__fee_Amoun__stu_f__33D4B598" FromRole="tbl_enrolment" ToRole="fee_Amount_November" />
+    <NavigationProperty Name="fee_Amount_Octuber" Relationship="Self.FK__fee_Amoun__stu_f__30F848ED" FromRole="tbl_enrolment" ToRole="fee_Amount_Octuber" />
+    <NavigationProperty Name="fee_Amount_September" Relationship="Self.FK__fee_Amoun__stu_f__2E1BDC42" FromRole="tbl_enrolment" ToRole="fee_Amount_September" />
+    <Property Name="classs" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="tbl_registration">
+    <Key>
+      <PropertyRef Name="Stu_reg_id" />
+    </Key>
+    <Property Name="Stu_reg_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Stu_f_name" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Stu_l_name" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Stu_father_name" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="stu_father_cnic" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="stu_nationality" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="stu_reg_date" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Stu_gender" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Stu_address" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="stu_contact" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="stu_A_Contact" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="stu_date_of_birth" Type="String" MaxLength="40" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Stu_religion" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="stu_class" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="teacher">
+    <Key>
+      <PropertyRef Name="teacher_id" />
+    </Key>
+    <Property Name="teacher_id" Type="Int32" Nullable="false" />
+    <Property Name="teacher_name" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Teacherjoin_date" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Qualification" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Teaching_course" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="teacher_contact" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="teacher_monthly_salary" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="timetable">
+    <Key>
+      <PropertyRef Name="table_id" />
+    </Key>
+    <Property Name="table_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="table_day" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="table_session1" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="table_session2" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="table_session3" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="table_session4" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="table_session5" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="table_session6" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="table_session7" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="table_session8" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="VI_courses">
+    <Key>
+      <PropertyRef Name="cous_id" />
+    </Key>
+    <Property Name="cous_id" Type="Int32" Nullable="false" />
+    <Property Name="cous_name" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="VII_courses">
+    <Key>
+      <PropertyRef Name="cous_id" />
+    </Key>
+    <Property Name="cous_id" Type="Int32" Nullable="false" />
+    <Property Name="cous_name" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="VIII_courses">
+    <Key>
+      <PropertyRef Name="cous_id" />
+    </Key>
+    <Property Name="cous_id" Type="Int32" Nullable="false" />
+    <Property Name="cous_name" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="X_courses">
+    <Key>
+      <PropertyRef Name="cous_id" />
+    </Key>
+    <Property Name="cous_id" Type="Int32" Nullable="false" />
+    <Property Name="cous_name" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__atten_apr__stu_f__5DCAEF64">
+    <End Role="tbl_enrolment" Type="Self.tbl_enrolment" Multiplicity="0..1" />
+    <End Role="atten_april" Type="Self.atten_april" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_enrolment">
+        <PropertyRef Name="Stu_id" />
+      </Principal>
+      <Dependent Role="atten_april">
+        <PropertyRef Name="stu_fee_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__atten_aug__stu_f__693CA210">
+    <End Role="tbl_enrolment" Type="Self.tbl_enrolment" Multiplicity="0..1" />
+    <End Role="atten_aug" Type="Self.atten_aug" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_enrolment">
+        <PropertyRef Name="Stu_id" />
+      </Principal>
+      <Dependent Role="atten_aug">
+        <PropertyRef Name="stu_fee_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__atten_dec__stu_f__74AE54BC">
+    <End Role="tbl_enrolment" Type="Self.tbl_enrolment" Multiplicity="0..1" />
+    <End Role="atten_dec" Type="Self.atten_dec" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_enrolment">
+        <PropertyRef Name="Stu_id" />
+      </Principal>
+      <Dependent Role="atten_dec">
+        <PropertyRef Name="stu_fee_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__atten_feb__stu_f__5812160E">
+    <End Role="tbl_enrolment" Type="Self.tbl_enrolment" Multiplicity="0..1" />
+    <End Role="atten_feb" Type="Self.atten_feb" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_enrolment">
+        <PropertyRef Name="Stu_id" />
+      </Principal>
+      <Dependent Role="atten_feb">
+        <PropertyRef Name="stu_fee_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__atten_Jan__stu_f__5535A963">
+    <End Role="tbl_enrolment" Type="Self.tbl_enrolment" Multiplicity="0..1" />
+    <End Role="atten_January" Type="Self.atten_January" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_enrolment">
+        <PropertyRef Name="Stu_id" />
+      </Principal>
+      <Dependent Role="atten_January">
+        <PropertyRef Name="stu_fee_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__atten_Jul__stu_f__66603565">
+    <End Role="tbl_enrolment" Type="Self.tbl_enrolment" Multiplicity="0..1" />
+    <End Role="atten_July" Type="Self.atten_July" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_enrolment">
+        <PropertyRef Name="Stu_id" />
+      </Principal>
+      <Dependent Role="atten_July">
+        <PropertyRef Name="stu_fee_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__atten_Jun__stu_f__6383C8BA">
+    <End Role="tbl_enrolment" Type="Self.tbl_enrolment" Multiplicity="0..1" />
+    <End Role="atten_June" Type="Self.atten_June" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_enrolment">
+        <PropertyRef Name="Stu_id" />
+      </Principal>
+      <Dependent Role="atten_June">
+        <PropertyRef Name="stu_fee_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__atten_mar__stu_f__5AEE82B9">
+    <End Role="tbl_enrolment" Type="Self.tbl_enrolment" Multiplicity="0..1" />
+    <End Role="atten_march" Type="Self.atten_march" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_enrolment">
+        <PropertyRef Name="Stu_id" />
+      </Principal>
+      <Dependent Role="atten_march">
+        <PropertyRef Name="stu_fee_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__atten_may__stu_f__60A75C0F">
+    <End Role="tbl_enrolment" Type="Self.tbl_enrolment" Multiplicity="0..1" />
+    <End Role="atten_may" Type="Self.atten_may" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_enrolment">
+        <PropertyRef Name="Stu_id" />
+      </Principal>
+      <Dependent Role="atten_may">
+        <PropertyRef Name="stu_fee_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__atten_nov__stu_f__71D1E811">
+    <End Role="tbl_enrolment" Type="Self.tbl_enrolment" Multiplicity="0..1" />
+    <End Role="atten_nov" Type="Self.atten_nov" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_enrolment">
+        <PropertyRef Name="Stu_id" />
+      </Principal>
+      <Dependent Role="atten_nov">
+        <PropertyRef Name="stu_fee_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__atten_oct__stu_f__6EF57B66">
+    <End Role="tbl_enrolment" Type="Self.tbl_enrolment" Multiplicity="0..1" />
+    <End Role="atten_oct" Type="Self.atten_oct" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_enrolment">
+        <PropertyRef Name="Stu_id" />
+      </Principal>
+      <Dependent Role="atten_oct">
+        <PropertyRef Name="stu_fee_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__atten_sep__stu_f__6C190EBB">
+    <End Role="tbl_enrolment" Type="Self.tbl_enrolment" Multiplicity="0..1" />
+    <End Role="atten_sep" Type="Self.atten_sep" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_enrolment">
+        <PropertyRef Name="Stu_id" />
+      </Principal>
+      <Dependent Role="atten_sep">
+        <PropertyRef Name="stu_fee_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__fee_Amoun__stu_f__1ED998B2">
+    <End Role="tbl_enrolment" Type="Self.tbl_enrolment" Multiplicity="0..1" />
+    <End Role="fee_Amount_April" Type="Self.fee_Amount_April" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_enrolment">
+        <PropertyRef Name="Stu_id" />
+      </Principal>
+      <Dependent Role="fee_Amount_April">
+        <PropertyRef Name="stu_fee_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__fee_Amoun__stu_f__2B3F6F97">
+    <End Role="tbl_enrolment" Type="Self.tbl_enrolment" Multiplicity="0..1" />
+    <End Role="fee_Amount_Augest" Type="Self.fee_Amount_Augest" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_enrolment">
+        <PropertyRef Name="Stu_id" />
+      </Principal>
+      <Dependent Role="fee_Amount_Augest">
+        <PropertyRef Name="stu_fee_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__fee_Amoun__stu_f__36B12243">
+    <End Role="tbl_enrolment" Type="Self.tbl_enrolment" Multiplicity="0..1" />
+    <End Role="fee_Amount_December" Type="Self.fee_Amount_December" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_enrolment">
+        <PropertyRef Name="Stu_id" />
+      </Principal>
+      <Dependent Role="fee_Amount_December">
+        <PropertyRef Name="stu_fee_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__fee_Amoun__stu_f__1920BF5C">
+    <End Role="tbl_enrolment" Type="Self.tbl_enrolment" Multiplicity="0..1" />
+    <End Role="fee_Amount_February" Type="Self.fee_Amount_February" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_enrolment">
+        <PropertyRef Name="Stu_id" />
+      </Principal>
+      <Dependent Role="fee_Amount_February">
+        <PropertyRef Name="stu_fee_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__fee_Amoun__stu_f__164452B1">
+    <End Role="tbl_enrolment" Type="Self.tbl_enrolment" Multiplicity="0..1" />
+    <End Role="fee_Amount_January" Type="Self.fee_Amount_January" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_enrolment">
+        <PropertyRef Name="Stu_id" />
+      </Principal>
+      <Dependent Role="fee_Amount_January">
+        <PropertyRef Name="stu_fee_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__fee_Amoun__stu_f__286302EC">
+    <End Role="tbl_enrolment" Type="Self.tbl_enrolment" Multiplicity="0..1" />
+    <End Role="fee_Amount_July" Type="Self.fee_Amount_July" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_enrolment">
+        <PropertyRef Name="Stu_id" />
+      </Principal>
+      <Dependent Role="fee_Amount_July">
+        <PropertyRef Name="stu_fee_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__fee_Amoun__stu_f__24927208">
+    <End Role="tbl_enrolment" Type="Self.tbl_enrolment" Multiplicity="0..1" />
+    <End Role="fee_Amount_June" Type="Self.fee_Amount_June" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_enrolment">
+        <PropertyRef Name="Stu_id" />
+      </Principal>
+      <Dependent Role="fee_Amount_June">
+        <PropertyRef Name="stu_fee_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__fee_Amoun__stu_f__1BFD2C07">
+    <End Role="tbl_enrolment" Type="Self.tbl_enrolment" Multiplicity="0..1" />
+    <End Role="fee_Amount_march" Type="Self.fee_Amount_march" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_enrolment">
+        <PropertyRef Name="Stu_id" />
+      </Principal>
+      <Dependent Role="fee_Amount_march">
+        <PropertyRef Name="stu_fee_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__fee_Amoun__stu_f__21B6055D">
+    <End Role="tbl_enrolment" Type="Self.tbl_enrolment" Multiplicity="0..1" />
+    <End Role="fee_Amount_May" Type="Self.fee_Amount_May" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_enrolment">
+        <PropertyRef Name="Stu_id" />
+      </Principal>
+      <Dependent Role="fee_Amount_May">
+        <PropertyRef Name="stu_fee_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__fee_Amoun__stu_f__33D4B598">
+    <End Role="tbl_enrolment" Type="Self.tbl_enrolment" Multiplicity="0..1" />
+    <End Role="fee_Amount_November" Type="Self.fee_Amount_November" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_enrolment">
+        <PropertyRef Name="Stu_id" />
+      </Principal>
+      <Dependent Role="fee_Amount_November">
+        <PropertyRef Name="stu_fee_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__fee_Amoun__stu_f__30F848ED">
+    <End Role="tbl_enrolment" Type="Self.tbl_enrolment" Multiplicity="0..1" />
+    <End Role="fee_Amount_Octuber" Type="Self.fee_Amount_Octuber" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_enrolment">
+        <PropertyRef Name="Stu_id" />
+      </Principal>
+      <Dependent Role="fee_Amount_Octuber">
+        <PropertyRef Name="stu_fee_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__fee_Amoun__stu_f__2E1BDC42">
+    <End Role="tbl_enrolment" Type="Self.tbl_enrolment" Multiplicity="0..1" />
+    <End Role="fee_Amount_September" Type="Self.fee_Amount_September" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_enrolment">
+        <PropertyRef Name="Stu_id" />
+      </Principal>
+      <Dependent Role="fee_Amount_September">
+        <PropertyRef Name="stu_fee_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="schooolmanagementsystemEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="atten_april" EntityType="Self.atten_april" />
+    <EntitySet Name="atten_aug" EntityType="Self.atten_aug" />
+    <EntitySet Name="atten_dec" EntityType="Self.atten_dec" />
+    <EntitySet Name="atten_feb" EntityType="Self.atten_feb" />
+    <EntitySet Name="atten_January" EntityType="Self.atten_January" />
+    <EntitySet Name="atten_July" EntityType="Self.atten_July" />
+    <EntitySet Name="atten_June" EntityType="Self.atten_June" />
+    <EntitySet Name="atten_march" EntityType="Self.atten_march" />
+    <EntitySet Name="atten_may" EntityType="Self.atten_may" />
+    <EntitySet Name="atten_nov" EntityType="Self.atten_nov" />
+    <EntitySet Name="atten_oct" EntityType="Self.atten_oct" />
+    <EntitySet Name="atten_sep" EntityType="Self.atten_sep" />
+    <EntitySet Name="classI_courses" EntityType="Self.classI_courses" />
+    <EntitySet Name="classII_courses" EntityType="Self.classII_courses" />
+    <EntitySet Name="classIII_courses" EntityType="Self.classIII_courses" />
+    <EntitySet Name="classIV_courses" EntityType="Self.classIV_courses" />
+    <EntitySet Name="classV_courses" EntityType="Self.classV_courses" />
+    <EntitySet Name="eventsses" EntityType="Self.eventss" />
+    <EntitySet Name="fee_Amount_April" EntityType="Self.fee_Amount_April" />
+    <EntitySet Name="fee_Amount_Augest" EntityType="Self.fee_Amount_Augest" />
+    <EntitySet Name="fee_Amount_December" EntityType="Self.fee_Amount_December" />
+    <EntitySet Name="fee_Amount_February" EntityType="Self.fee_Amount_February" />
+    <EntitySet Name="fee_Amount_January" EntityType="Self.fee_Amount_January" />
+    <EntitySet Name="fee_Amount_July" EntityType="Self.fee_Amount_July" />
+    <EntitySet Name="fee_Amount_June" EntityType="Self.fee_Amount_June" />
+    <EntitySet Name="fee_Amount_march" EntityType="Self.fee_Amount_march" />
+    <EntitySet Name="fee_Amount_May" EntityType="Self.fee_Amount_May" />
+    <EntitySet Name="fee_Amount_November" EntityType="Self.fee_Amount_November" />
+    <EntitySet Name="fee_Amount_Octuber" EntityType="Self.fee_Amount_Octuber" />
+    <EntitySet Name="fee_Amount_September" EntityType="Self.fee_Amount_September" />
+    <EntitySet Name="IX_courses" EntityType="Self.IX_courses" />
+    <EntitySet Name="playgroup_courses" EntityType="Self.playgroup_courses" />
+    <EntitySet Name="tbl_admin" EntityType="Self.tbl_admin" />
+    <EntitySet Name="tbl_enrolment" EntityType="Self.tbl_enrolment" />
+    <EntitySet Name="tbl_registration" EntityType="Self.tbl_registration" />
+    <EntitySet Name="teachers" EntityType="Self.teacher" />
+    <EntitySet Name="timetables" EntityType="Self.timetable" />
+    <EntitySet Name="VI_courses" EntityType="Self.VI_courses" />
+    <EntitySet Name="VII_courses" EntityType="Self.VII_courses" />
+    <EntitySet Name="VIII_courses" EntityType="Self.VIII_courses" />
+    <EntitySet Name="X_courses" EntityType="Self.X_courses" />
+    <AssociationSet Name="FK__atten_apr__stu_f__5DCAEF64" Association="Self.FK__atten_apr__stu_f__5DCAEF64">
+      <End Role="tbl_enrolment" EntitySet="tbl_enrolment" />
+      <End Role="atten_april" EntitySet="atten_april" />
+    </AssociationSet>
+    <AssociationSet Name="FK__atten_aug__stu_f__693CA210" Association="Self.FK__atten_aug__stu_f__693CA210">
+      <End Role="tbl_enrolment" EntitySet="tbl_enrolment" />
+      <End Role="atten_aug" EntitySet="atten_aug" />
+    </AssociationSet>
+    <AssociationSet Name="FK__atten_dec__stu_f__74AE54BC" Association="Self.FK__atten_dec__stu_f__74AE54BC">
+      <End Role="tbl_enrolment" EntitySet="tbl_enrolment" />
+      <End Role="atten_dec" EntitySet="atten_dec" />
+    </AssociationSet>
+    <AssociationSet Name="FK__atten_feb__stu_f__5812160E" Association="Self.FK__atten_feb__stu_f__5812160E">
+      <End Role="tbl_enrolment" EntitySet="tbl_enrolment" />
+      <End Role="atten_feb" EntitySet="atten_feb" />
+    </AssociationSet>
+    <AssociationSet Name="FK__atten_Jan__stu_f__5535A963" Association="Self.FK__atten_Jan__stu_f__5535A963">
+      <End Role="tbl_enrolment" EntitySet="tbl_enrolment" />
+      <End Role="atten_January" EntitySet="atten_January" />
+    </AssociationSet>
+    <AssociationSet Name="FK__atten_Jul__stu_f__66603565" Association="Self.FK__atten_Jul__stu_f__66603565">
+      <End Role="tbl_enrolment" EntitySet="tbl_enrolment" />
+      <End Role="atten_July" EntitySet="atten_July" />
+    </AssociationSet>
+    <AssociationSet Name="FK__atten_Jun__stu_f__6383C8BA" Association="Self.FK__atten_Jun__stu_f__6383C8BA">
+      <End Role="tbl_enrolment" EntitySet="tbl_enrolment" />
+      <End Role="atten_June" EntitySet="atten_June" />
+    </AssociationSet>
+    <AssociationSet Name="FK__atten_mar__stu_f__5AEE82B9" Association="Self.FK__atten_mar__stu_f__5AEE82B9">
+      <End Role="tbl_enrolment" EntitySet="tbl_enrolment" />
+      <End Role="atten_march" EntitySet="atten_march" />
+    </AssociationSet>
+    <AssociationSet Name="FK__atten_may__stu_f__60A75C0F" Association="Self.FK__atten_may__stu_f__60A75C0F">
+      <End Role="tbl_enrolment" EntitySet="tbl_enrolment" />
+      <End Role="atten_may" EntitySet="atten_may" />
+    </AssociationSet>
+    <AssociationSet Name="FK__atten_nov__stu_f__71D1E811" Association="Self.FK__atten_nov__stu_f__71D1E811">
+      <End Role="tbl_enrolment" EntitySet="tbl_enrolment" />
+      <End Role="atten_nov" EntitySet="atten_nov" />
+    </AssociationSet>
+    <AssociationSet Name="FK__atten_oct__stu_f__6EF57B66" Association="Self.FK__atten_oct__stu_f__6EF57B66">
+      <End Role="tbl_enrolment" EntitySet="tbl_enrolment" />
+      <End Role="atten_oct" EntitySet="atten_oct" />
+    </AssociationSet>
+    <AssociationSet Name="FK__atten_sep__stu_f__6C190EBB" Association="Self.FK__atten_sep__stu_f__6C190EBB">
+      <End Role="tbl_enrolment" EntitySet="tbl_enrolment" />
+      <End Role="atten_sep" EntitySet="atten_sep" />
+    </AssociationSet>
+    <AssociationSet Name="FK__fee_Amoun__stu_f__1ED998B2" Association="Self.FK__fee_Amoun__stu_f__1ED998B2">
+      <End Role="tbl_enrolment" EntitySet="tbl_enrolment" />
+      <End Role="fee_Amount_April" EntitySet="fee_Amount_April" />
+    </AssociationSet>
+    <AssociationSet Name="FK__fee_Amoun__stu_f__2B3F6F97" Association="Self.FK__fee_Amoun__stu_f__2B3F6F97">
+      <End Role="tbl_enrolment" EntitySet="tbl_enrolment" />
+      <End Role="fee_Amount_Augest" EntitySet="fee_Amount_Augest" />
+    </AssociationSet>
+    <AssociationSet Name="FK__fee_Amoun__stu_f__36B12243" Association="Self.FK__fee_Amoun__stu_f__36B12243">
+      <End Role="tbl_enrolment" EntitySet="tbl_enrolment" />
+      <End Role="fee_Amount_December" EntitySet="fee_Amount_December" />
+    </AssociationSet>
+    <AssociationSet Name="FK__fee_Amoun__stu_f__1920BF5C" Association="Self.FK__fee_Amoun__stu_f__1920BF5C">
+      <End Role="tbl_enrolment" EntitySet="tbl_enrolment" />
+      <End Role="fee_Amount_February" EntitySet="fee_Amount_February" />
+    </AssociationSet>
+    <AssociationSet Name="FK__fee_Amoun__stu_f__164452B1" Association="Self.FK__fee_Amoun__stu_f__164452B1">
+      <End Role="tbl_enrolment" EntitySet="tbl_enrolment" />
+      <End Role="fee_Amount_January" EntitySet="fee_Amount_January" />
+    </AssociationSet>
+    <AssociationSet Name="FK__fee_Amoun__stu_f__286302EC" Association="Self.FK__fee_Amoun__stu_f__286302EC">
+      <End Role="tbl_enrolment" EntitySet="tbl_enrolment" />
+      <End Role="fee_Amount_July" EntitySet="fee_Amount_July" />
+    </AssociationSet>
+    <AssociationSet Name="FK__fee_Amoun__stu_f__24927208" Association="Self.FK__fee_Amoun__stu_f__24927208">
+      <End Role="tbl_enrolment" EntitySet="tbl_enrolment" />
+      <End Role="fee_Amount_June" EntitySet="fee_Amount_June" />
+    </AssociationSet>
+    <AssociationSet Name="FK__fee_Amoun__stu_f__1BFD2C07" Association="Self.FK__fee_Amoun__stu_f__1BFD2C07">
+      <End Role="tbl_enrolment" EntitySet="tbl_enrolment" />
+      <End Role="fee_Amount_march" EntitySet="fee_Amount_march" />
+    </AssociationSet>
+    <AssociationSet Name="FK__fee_Amoun__stu_f__21B6055D" Association="Self.FK__fee_Amoun__stu_f__21B6055D">
+      <End Role="tbl_enrolment" EntitySet="tbl_enrolment" />
+      <End Role="fee_Amount_May" EntitySet="fee_Amount_May" />
+    </AssociationSet>
+    <AssociationSet Name="FK__fee_Amoun__stu_f__33D4B598" Association="Self.FK__fee_Amoun__stu_f__33D4B598">
+      <End Role="tbl_enrolment" EntitySet="tbl_enrolment" />
+      <End Role="fee_Amount_November" EntitySet="fee_Amount_November" />
+    </AssociationSet>
+    <AssociationSet Name="FK__fee_Amoun__stu_f__30F848ED" Association="Self.FK__fee_Amoun__stu_f__30F848ED">
+      <End Role="tbl_enrolment" EntitySet="tbl_enrolment" />
+      <End Role="fee_Amount_Octuber" EntitySet="fee_Amount_Octuber" />
+    </AssociationSet>
+    <AssociationSet Name="FK__fee_Amoun__stu_f__2E1BDC42" Association="Self.FK__fee_Amoun__stu_f__2E1BDC42">
+      <End Role="tbl_enrolment" EntitySet="tbl_enrolment" />
+      <End Role="fee_Amount_September" EntitySet="fee_Amount_September" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

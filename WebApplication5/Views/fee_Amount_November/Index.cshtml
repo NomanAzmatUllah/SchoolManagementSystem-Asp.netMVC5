@@ -1,0 +1,115 @@
+﻿@model IEnumerable<WebApplication5.Models.fee_Amount_November>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<style>
+    .btn {
+        color: dodgerblue;
+        background-color: white;
+        text-decoration: none;
+    }
+
+        .btn:hover {
+            color: white;
+            background-color: dodgerblue;
+        }
+
+    .heading {
+        height: 45px;
+        background-color: dodgerblue;
+        color: white;
+        width: 100%;
+        border-radius: 14px;
+        text-align: center;
+    }
+</style>
+
+<div class="heading">
+
+    <h3 style="color:white; padding-top: 4px;font-family: calibri">Fee Amount Of November</h3>
+</div>
+<br />
+
+@using (Html.BeginForm("Index", "fee_Amount_November"))
+{
+    <input type="text" id="search" name="search" class="col-md-10" placeholder="Search-Id" />
+
+    <input type="submit" value="Search" class="btn btn-danger btn-default" />
+}
+
+<br />
+
+
+
+<button class="btn btn-default" onclick="location.href='@Url.Action("Create", "fee_Amount_November")';return false;">Add Details</button>
+
+<br /><br />
+<table class="table table-condensed table-striped table-responsive">
+    <tr>
+        <th>
+            Name
+        </th>
+        <th>
+            Advance
+        </th>
+        <th>
+            Monthly Amount
+
+        </th>
+        <th>
+            Payment For The Month
+        </th>
+        <th>
+            Paid
+        </th>
+        <th>
+            Date
+
+        </th>
+        
+        <th>
+            Details
+        </th>
+        <th>
+            Delete
+        </th>
+
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.tbl_enrolment.Stu_f_name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.fee_Advance)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Fee_Amount)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.fee_month_name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.fee_status)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.fee_date)
+            </td>
+
+            <td>
+         
+            <td>
+                @Html.ActionLink("Details", "Details", new { id = item.fee_id })
+            </td>
+            <td>
+                @Html.ActionLink("Delete", "Delete", new { id = item.fee_id })
+            </td>
+        </tr>
+    }
+
+</table>

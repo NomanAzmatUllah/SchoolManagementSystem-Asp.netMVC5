@@ -1,0 +1,105 @@
+﻿@model WebApplication5.Models.fee_Amount_June
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<br />
+
+
+<input id="printdiv" type="submit" class="btn btn-block btn-default" value="Print" onclick="printContent('monthlyfees')" />
+
+<div id="monthlyfees">
+    <h4 style="text-align:center;">Fee-Slip June</h4>
+
+    <table class="table table-bordered table-condensed table-responsive">
+
+        <tr>
+            <td>
+                Name
+            </td>
+
+            <td>
+                @Html.DisplayFor(model => model.tbl_enrolment.Stu_f_name)
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                Advance
+            </td>
+
+            <td>
+                @Html.DisplayFor(model => model.fee_Advance)
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                Amount
+            </td>
+
+            <td>
+                @Html.DisplayFor(model => model.Fee_Amount)
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                Month
+            </td>
+
+            <td>
+                @Html.DisplayFor(model => model.fee_month_name)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Status
+            </td>
+
+            <td>
+                @Html.DisplayFor(model => model.fee_status)
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                Date
+            </td>
+
+            <td>
+                @Html.DisplayFor(model => model.fee_date)
+            </td>
+        </tr>
+
+
+
+        @DateTime.Now
+
+    </table>
+
+</div>
+
+
+
+
+<script>
+
+
+    function printContent(el) {
+        debugger;
+        var restorepage = document.body.innerHTML;
+        var printcontent = document.getElementById(el).innerHTML;
+        document.body.innerHTML = printcontent;
+        window.print();
+        document.body.innerHTML = restorepage;
+        var clicks = 0;
+        clicks += 1;
+        document.getElementById("clicks").innerHTML = clicks;
+
+
+
+
+    }
+</script>

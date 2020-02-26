@@ -1,0 +1,136 @@
+﻿@model WebApplication5.Models.tbl_registration
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<style>
+    .box {
+        height: 41px;
+        width: 1204px;
+        border: 1px solid black;
+        padding-top: 5px;
+    }
+
+
+    .heading {
+        height: 45px;
+        background-color: dodgerblue;
+        color: white;
+        width: 240px;
+        border-radius: 14px;
+        width: 100%;
+        text-align: center;
+    }
+</style>
+<br />
+
+<div>
+    <img style="height: 207px; width: 590px;" src="~/images/The-City-School-pakistan-Logo.png" />
+</div>
+
+<br />
+<br />
+
+<div class="heading">
+    <h3 style="color:white; padding-left: 6px; padding-top: 4px;font-family: calibri">Registration Form</h3>
+</div>
+
+<br />
+<br />
+<br />
+
+<form>
+    <fieldset>
+        <div>
+
+            <div class="box">
+                &nbsp;&nbsp;  First-Name:&nbsp;&nbsp;&nbsp;
+                @Html.DisplayFor(model => model.Stu_f_name)
+            </div>
+            <div class="box" style="width:601px; margin-left: 603px;margin-top: -41px;">
+                &nbsp;&nbsp;  last-Name: &nbsp;&nbsp;&nbsp;
+                @Html.DisplayFor(model => model.Stu_l_name)
+            </div>
+            <div class="box">
+                &nbsp;&nbsp;  Father-Name:
+                @Html.DisplayFor(model => model.Stu_father_name)
+            </div>
+            <div class="box" style="width:601px; margin-left: 603px;margin-top: -41px;">
+                &nbsp;&nbsp;  Father-Cnic: &nbsp;&nbsp;&nbsp;
+                @Html.DisplayFor(model => model.stu_father_cnic)
+
+
+            </div>
+            <div class="box">
+                &nbsp;&nbsp;  Nationality: &nbsp;&nbsp;&nbsp;
+                @Html.DisplayFor(model => model.stu_nationality)
+            </div>
+            <div class="box" style="width:601px; margin-left: 603px;margin-top: -41px;">
+                &nbsp;&nbsp;  Registration-date: &nbsp;&nbsp;&nbsp;
+                @Html.DisplayFor(model => model.stu_reg_date)
+            </div>
+            <div class="box">
+                &nbsp;&nbsp;   Gender: &nbsp;&nbsp;&nbsp;
+                @Html.DisplayNameFor(model => model.Stu_gender)
+            </div>
+
+            <div class="box" style="width:601px; margin-left: 603px;margin-top: -41px;">
+                &nbsp;&nbsp;   Contact: &nbsp;&nbsp;&nbsp;
+                @Html.DisplayFor(model => model.stu_contact)
+            </div>
+
+            <div class="box">
+                &nbsp;&nbsp;   Amergency Contact: &nbsp;&nbsp;&nbsp;
+                @Html.DisplayFor(model => model.stu_A_Contact)
+            </div>
+            <div class="box" style="width:601px; margin-left: 603px;margin-top: -41px;">
+                &nbsp;&nbsp;    Date-Of-Birth: &nbsp;&nbsp;&nbsp;
+                @Html.DisplayFor(model => model.stu_date_of_birth)
+            </div>
+            <div class="box">
+                &nbsp;&nbsp;   Religion: &nbsp;&nbsp;&nbsp;
+                @Html.DisplayFor(model => model.Stu_religion)
+            </div>
+
+            <div class="box" style="width:601px; margin-left: 603px;margin-top: -41px;">
+                &nbsp;&nbsp;    Class:  &nbsp;&nbsp;&nbsp;
+                @Html.DisplayFor(model => model.stu_class)
+            </div>
+
+            <div class="box">
+                &nbsp;&nbsp;    Address: &nbsp;&nbsp;&nbsp;
+                @Html.DisplayFor(model => model.Stu_address)
+            </div>
+            <div class="box">
+
+            </div>
+            <div class="box">
+
+            </div>
+
+
+
+        </div>
+    </fieldset>
+</form>
+<br />
+<br />
+<br />
+<br />
+
+<div>
+    Date:
+    @Html.DisplayFor(model => model.stu_reg_date)
+
+
+</div>
+
+<div style="margin-left:900px;">
+
+    Signature:_________________________
+</div>
+
+@*<div>
+        <img style="height: 670px;margin-top: -931px;opacity: 0.3;margin-left: 311px;" src="~/images/FFG.jpg" />
+    </div>*@

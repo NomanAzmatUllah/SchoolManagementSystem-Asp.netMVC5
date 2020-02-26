@@ -1,0 +1,75 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<link href="~/Content/bootstrap.paper.min.css" rel="stylesheet" />
+<link href="~/Content/index.css/index.css" rel="stylesheet" />
+<script src="~/Scripts/bootstrap.min.js"></script>
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<html>
+<head>
+<style>
+   
+    .img{
+        background-color: white;
+        border: 1px solid white;
+        transition:1s;
+        opacity:0.7;
+    }
+    .img:hover{
+        
+	    opacity:1;
+        -webkit-transform:scale(1.2);
+    }
+    
+        </style>
+</head>
+<body>
+
+    <div class="container">
+        <header></header>
+
+        <div class="row">
+            <div class="col-lg-12">
+                    <div class="div1">
+                        <img onclick="location.href='@Url.Action("Create", "Registration")';return false;" src="~/images/images.jpg"  class="grow img img-responsive img-circle" />
+                        <h3>Registration</h3>
+                    </div>
+                
+
+                <div class="div2">
+                    <img onclick="location.href='@Url.Action("Create", "stu_enrolment")';return false;" src="~/images/9da562b0f0f4b964a6bda0221168bb31.jpg"  class="img img-responsive grow img-circle" />
+                    <h3>Enrollment</h3>
+                </div>
+
+                <div class="div3">
+                    <img onclick="location.href='@Url.Action("Fee", "Fee")';return false;" src="~/images/fee_structure.jpg" class="img grow img-responsive img-circle" />
+                    <h3>Manage Fee</h3>
+                </div>
+
+                <div class="div4">
+                    <img onclick="location.href='@Url.Action("Index", "attendance")';return false;" src="~/images/bio.jpg" class="img grow img-responsive img-circle" />
+                    <h3>Attendance</h3>
+                </div>
+
+                <div class="div5">
+                    <img onclick="location.href='@Url.Action("Index", "Cources")';return false;" src="~/images/portrayal-89193_960_720.jpg" class="img grow img-responsive img-circle" />
+                    <h3>Courses</h3>
+                </div>
+
+                <div class="div6">
+                    <img onclick="location.href='@Url.Action("Index", "teachers")';return false;" src="~/images/images (1).jpg" class="img grow img-responsive img-circle" />
+                    <h3>Management</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="img-responsive" style="margin-left:800px;">
+            <img  style="height: 331px; margin-top: -530px;" src="~/images/Back-to-school-children-in-uniforms.jpg" />
+        </div>
+
+    </div>
+
+</body>
+</html>
+

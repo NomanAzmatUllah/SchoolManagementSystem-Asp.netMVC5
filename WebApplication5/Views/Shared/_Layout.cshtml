@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al-Hannan SS</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+    <style>
+        .navbar .navbar-nav > li > a:hover{
+    
+            color:dodgerblue;
+            background-color:white;
+
+        }
+        .dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+}
+
+.dropdown-submenu > a.dropdown-item:after {
+    font-family: FontAwesome;
+    content: "\f054";
+    float: right;
+}
+.dropdown-submenu:hover > .dropdown-menu {
+    display: block;
+}
+
+    </style>
+
+</head>
+
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Sms", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("Registration", "Create", "Registration")</li>
+                    <li>@Html.ActionLink("Enrollment", "Enrollment", "Enrollment")</li>
+                    <li>@Html.ActionLink("Fee", "Fee", "Fee")</li>
+                    <li>@Html.ActionLink("Attendance", "Index", "attendance")</li>
+                    <li>@Html.ActionLink("Courses", "Index", "Cources")</li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Mangement<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>@Html.ActionLink("Teacher", "Create", "teachers")</li>
+                            <li>@Html.ActionLink("Events", "Create", "eventsses")</li>
+                            <li>@Html.ActionLink("TimeTable", "Index", "timetables")</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Report<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>@Html.ActionLink("Registration-Report", "Index", "Registration")</li>
+                            <li>@Html.ActionLink("Enrollment-Report", "Index", "stu_enrolment")</li>
+                            <li>@Html.ActionLink("Teacher-Report", "Index", "teachers")</li>
+                            <li>@Html.ActionLink("Event-Report", "Index", "eventsses")</li>
+
+                            <li class="dropdown-submenu">
+                                <a class="test" tabindex="-1" href="#">Fee-Report<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li>@Html.ActionLink("January", "Index", "fee_Amount_January")</li>
+                                    <li>@Html.ActionLink("February", "Index", "fee_Amount_February")</li>
+                                    <li>@Html.ActionLink("March", "Index", "fee_Amount_march")</li>
+                                    <li>@Html.ActionLink("April", "Index", "fee_Amount_April")</li>
+                                    <li>@Html.ActionLink("May", "Index", "fee_Amount_May")</li>
+                                    <li>@Html.ActionLink("June", "Index", "fee_Amount_June")</li>
+                                    <li>@Html.ActionLink("July", "Index", "fee_Amount_July")</li>
+                                    <li>@Html.ActionLink("August", "Index", "fee_Amount_Augest")</li>
+                                    <li>@Html.ActionLink("September", "Index", "fee_Amount_September")</li>
+                                   <li>@Html.ActionLink("October", "Index", "fee_Amount_Octuber")</li>
+                                    <li>@Html.ActionLink("November", "Index", "fee_Amount_November")</li>
+                                    <li>@Html.ActionLink("December", "Index", "fee_Amount_December")</li>
+                                </ul>
+
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a class="test" tabindex="-1" href="#">Attendance-Report<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li>@Html.ActionLink("January", "Index", "atten_January")</li>
+                                    <li>@Html.ActionLink("February", "Index", "atten_feb")</li>
+                                    <li>@Html.ActionLink("March", "Index", "atten_march")</li>
+                                    <li>@Html.ActionLink("April", "Index", "atten_april")</li>
+                                    <li>@Html.ActionLink("May", "Index", "atten_may")</li>
+                                    <li>@Html.ActionLink("June", "Index", "atten_June")</li>
+                                    <li>@Html.ActionLink("July", "Index", "atten_July")</li>
+                                    <li>@Html.ActionLink("August", "Index", "atten_aug")</li>
+                                    <li>@Html.ActionLink("September", "Index", "atten_sep")</li>                                    
+                                    <li>@Html.ActionLink("October", "Index", "atten_oct")</li>
+                                    <li>@Html.ActionLink("November", "Index", "atten_nov")</li>
+                                    <li>@Html.ActionLink("December", "Index", "atten_dec")</li>
+                                </ul>
+                                </li>
+                            <li class="dropdown-submenu">
+                                <a class="test" tabindex="-1" href="#">Courses-Report<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li>@Html.ActionLink("PlayGroup", "Index", "playgroup_courses")</li>
+                                    <li>@Html.ActionLink("Class I", "Index", "classI_courses")</li>
+                                    <li>@Html.ActionLink("Class II", "Index", "classII_courses")</li>
+                                    <li>@Html.ActionLink("Class III", "Index", "classIII_courses")</li>
+                                    <li>@Html.ActionLink("Class IV", "Index", "classIV_courses")</li>
+                                    <li>@Html.ActionLink("Class V", "Index", "classV_courses")</li>
+                                    <li>@Html.ActionLink("Class VI", "Index", "VI_courses")</li>
+                                    <li>@Html.ActionLink("Class VII", "Index", "VII_courses")</li>
+                                    <li>@Html.ActionLink("Clss VIII", "Index", "VIII_courses")</li>
+                                    <li>@Html.ActionLink("Class IX", "Index", "IX_courses")</li>
+                                    <li>@Html.ActionLink("Class X", "Index", "X_courses")</li>
+                                </ul>
+                            </li>
+                                </ul>                  
+
+                    <li>@Html.ActionLink("Logout", "login", "Admin")</li>
+                                </ul>
+                       
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+
+        @*<footer>
+                <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            </footer>*@
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
+
+
+<script>
+$(document).ready(function(){
+  $('.dropdown-submenu a.test').on("click", function(e){
+    $(this).next('ul').toggle();
+    e.stopPropagation();
+    e.preventDefault();
+  });
+});
+</script>

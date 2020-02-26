@@ -1,0 +1,110 @@
+﻿@model IEnumerable<WebApplication5.Models.timetable>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<style>
+    .btn {
+        color: dodgerblue;
+        background-color: white;
+        text-decoration: none;
+    }
+
+        .btn:hover {
+            color: white;
+            background-color: dodgerblue;
+        }
+
+    .heading {
+        height: 45px;
+        background-color: dodgerblue;
+        color: white;
+        width: 100%;
+        border-radius: 14px;
+        text-align: center;
+    }
+</style>
+
+<div class="heading">
+
+    <h3 style="color:white; padding-top: 4px;font-family: calibri">Timetable Details</h3>
+</div>
+<br />
+
+
+<button class="btn btn-default" onclick="location.href='@Url.Action("Create", "timetables")';return false;">Add Timetable</button>
+
+<br /><br />
+<table class="table">
+    <tr>
+        <th>
+          Day
+        </th>
+        <th>
+            Seession 1
+
+        </th>
+        <th>
+            Session 2
+        </th>
+        <th>
+            Session 3
+        </th>
+        <th>
+            Session 4
+        </th>
+        <th>
+            Session 5
+        </th>
+        <th>
+            Session 6
+        </th>
+        <th>
+           Sesision 7
+        </th>
+        <th>
+            Session 8
+        </th>
+        <th>
+            Edit
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.table_day)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.table_session1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.table_session2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.table_session3)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.table_session4)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.table_session5)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.table_session6)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.table_session7)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.table_session8)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.table_id })        
+        </td>
+    </tr>
+}
+
+</table>

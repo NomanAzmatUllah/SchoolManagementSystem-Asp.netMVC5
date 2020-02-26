@@ -1,0 +1,114 @@
+c:\users\dell latitudee5440\documents\visual studio 2015\Projects\schoolsystem\WebApplication5\bin\ApplicationInsights.config
+c:\users\dell latitudee5440\documents\visual studio 2015\Projects\schoolsystem\WebApplication5\bin\roslyn\csc.exe
+c:\users\dell latitudee5440\documents\visual studio 2015\Projects\schoolsystem\WebApplication5\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\dell latitudee5440\documents\visual studio 2015\Projects\schoolsystem\WebApplication5\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\dell latitudee5440\documents\visual studio 2015\Projects\schoolsystem\WebApplication5\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\dell latitudee5440\documents\visual studio 2015\Projects\schoolsystem\WebApplication5\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\dell latitudee5440\documents\visual studio 2015\Projects\schoolsystem\WebApplication5\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\dell latitudee5440\documents\visual studio 2015\Projects\schoolsystem\WebApplication5\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\dell latitudee5440\documents\visual studio 2015\Projects\schoolsystem\WebApplication5\bin\roslyn\System.Collections.Immutable.dll
+c:\users\dell latitudee5440\documents\visual studio 2015\Projects\schoolsystem\WebApplication5\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\dell latitudee5440\documents\visual studio 2015\Projects\schoolsystem\WebApplication5\bin\roslyn\vbc.exe
+c:\users\dell latitudee5440\documents\visual studio 2015\Projects\schoolsystem\WebApplication5\bin\roslyn\VBCSCompiler.exe
+c:\users\dell latitudee5440\documents\visual studio 2015\Projects\schoolsystem\WebApplication5\bin\roslyn\VBCSCompiler.exe.config
+c:\users\dell latitudee5440\documents\visual studio 2015\Projects\schoolsystem\WebApplication5\bin\WebApplication5.dll.config
+c:\users\dell latitudee5440\documents\visual studio 2015\Projects\schoolsystem\WebApplication5\bin\WebApplication5.dll
+c:\users\dell latitudee5440\documents\visual studio 2015\Projects\schoolsystem\WebApplication5\bin\WebApplication5.pdb
+c:\users\dell latitudee5440\documents\visual studio 2015\Projects\schoolsystem\WebApplication5\bin\Antlr3.Runtime.dll
+c:\users\dell latitudee5440\documents\visual studio 2015\Projects\schoolsystem\WebApplication5\bin\Microsoft.AI.Agent.Intercept.dll
+c:\users\dell latitudee5440\documents\visual studio 2015\Projects\schoolsystem\WebApplication5\bin\Microsoft.AI.DependencyCollector.dll
+c:\users\dell latitudee5440\documents\visual studio 2015\Projects\schoolsystem\WebApplication5\bin\Microsoft.AI.PerfCounterCollector.dll
+c:\users\dell latitudee5440\documents\visual studio 2015\Projects\schoolsystem\WebApplication5\bin\Microsoft.AI.ServerTelemetryChannel.dll
+c:\users\dell latitudee5440\documents\visual studio 2015\Projects\schoolsystem\WebApplication5\bin\Microsoft.AI.Web.dll
+c:\users\dell latitudee5440\documents\visual studio 2015\Projects\schoolsystem\WebApplication5\bin\Microsoft.AI.WindowsServer.dll
+c:\users\dell latitudee5440\documents\visual studio 2015\Projects\schoolsystem\WebApplication5\bin\Microsoft.ApplicationInsights.dll
+c:\users\dell latitudee5440\documents\visual studio 2015\Projects\schoolsystem\WebApplication5\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\dell latitudee5440\documents\visual studio 2015\Projects\schoolsystem\WebApplication5\bin\Microsoft.Web.Infrastructure.dll
+c:\users\dell latitudee5440\documents\visual studio 2015\Projects\schoolsystem\WebApplication5\bin\Newtonsoft.Json.dll
+c:\users\dell latitudee5440\documents\visual studio 2015\Projects\schoolsystem\WebApplication5\bin\System.Web.Helpers.dll
+c:\users\dell latitudee5440\documents\visual studio 2015\Projects\schoolsystem\WebApplication5\bin\System.Web.Mvc.dll
+c:\users\dell latitudee5440\documents\visual studio 2015\Projects\schoolsystem\WebApplication5\bin\System.Web.Optimization.dll
+c:\users\dell latitudee5440\documents\visual studio 2015\Projects\schoolsystem\WebApplication5\bin\System.Web.Razor.dll
+c:\users\dell latitudee5440\documents\visual studio 2015\Projects\schoolsystem\WebApplication5\bin\System.Web.WebPages.Deployment.dll
+c:\users\dell latitudee5440\documents\visual studio 2015\Projects\schoolsystem\WebApplication5\bin\System.Web.WebPages.dll
+c:\users\dell latitudee5440\documents\visual studio 2015\Projects\schoolsystem\WebApplication5\bin\System.Web.WebPages.Razor.dll
+c:\users\dell latitudee5440\documents\visual studio 2015\Projects\schoolsystem\WebApplication5\bin\WebGrease.dll
+c:\users\dell latitudee5440\documents\visual studio 2015\Projects\schoolsystem\WebApplication5\bin\Microsoft.AI.DependencyCollector.xml
+c:\users\dell latitudee5440\documents\visual studio 2015\Projects\schoolsystem\WebApplication5\bin\Microsoft.AI.ServerTelemetryChannel.xml
+c:\users\dell latitudee5440\documents\visual studio 2015\Projects\schoolsystem\WebApplication5\bin\Microsoft.AI.Web.xml
+c:\users\dell latitudee5440\documents\visual studio 2015\Projects\schoolsystem\WebApplication5\bin\Microsoft.AI.WindowsServer.xml
+c:\users\dell latitudee5440\documents\visual studio 2015\Projects\schoolsystem\WebApplication5\bin\Microsoft.ApplicationInsights.xml
+c:\users\dell latitudee5440\documents\visual studio 2015\Projects\schoolsystem\WebApplication5\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\dell latitudee5440\documents\visual studio 2015\Projects\schoolsystem\WebApplication5\bin\System.Web.Helpers.xml
+c:\users\dell latitudee5440\documents\visual studio 2015\Projects\schoolsystem\WebApplication5\bin\System.Web.Mvc.xml
+c:\users\dell latitudee5440\documents\visual studio 2015\Projects\schoolsystem\WebApplication5\bin\System.Web.Optimization.xml
+c:\users\dell latitudee5440\documents\visual studio 2015\Projects\schoolsystem\WebApplication5\bin\System.Web.Razor.xml
+c:\users\dell latitudee5440\documents\visual studio 2015\Projects\schoolsystem\WebApplication5\bin\System.Web.WebPages.xml
+c:\users\dell latitudee5440\documents\visual studio 2015\Projects\schoolsystem\WebApplication5\bin\System.Web.WebPages.Deployment.xml
+c:\users\dell latitudee5440\documents\visual studio 2015\Projects\schoolsystem\WebApplication5\bin\System.Web.WebPages.Razor.xml
+c:\users\dell latitudee5440\documents\visual studio 2015\Projects\schoolsystem\WebApplication5\bin\Antlr3.Runtime.pdb
+c:\users\dell latitudee5440\documents\visual studio 2015\Projects\schoolsystem\WebApplication5\bin\Newtonsoft.Json.xml
+c:\users\dell latitudee5440\documents\visual studio 2015\Projects\schoolsystem\WebApplication5\obj\Debug\WebApplication5.csprojResolveAssemblyReference.cache
+c:\users\dell latitudee5440\documents\visual studio 2015\Projects\schoolsystem\WebApplication5\obj\Debug\WebApplication5.dll
+c:\users\dell latitudee5440\documents\visual studio 2015\Projects\schoolsystem\WebApplication5\obj\Debug\WebApplication5.pdb
+C:\Users\DELL LATITUDEE5440\documents\visual studio 2015\Projects\schoolsystem\WebApplication5\bin\EntityFramework.dll
+C:\Users\DELL LATITUDEE5440\documents\visual studio 2015\Projects\schoolsystem\WebApplication5\bin\EntityFramework.SqlServer.dll
+C:\Users\DELL LATITUDEE5440\documents\visual studio 2015\Projects\schoolsystem\WebApplication5\bin\EntityFramework.xml
+C:\Users\DELL LATITUDEE5440\documents\visual studio 2015\Projects\schoolsystem\WebApplication5\bin\EntityFramework.SqlServer.xml
+C:\Users\Noman\Downloads\Documents\Projects\schoolsystem\WebApplication5\obj\Debug\WebApplication5.csprojResolveAssemblyReference.cache
+C:\Users\Noman\Downloads\Documents\Projects\schoolsystem\WebApplication5\obj\Debug\WebApplication5.dll
+C:\Users\Noman\Downloads\Documents\Projects\schoolsystem\WebApplication5\obj\Debug\WebApplication5.pdb
+C:\Users\Noman\Downloads\Documents\Projects\schoolsystem\WebApplication5\bin\ApplicationInsights.config
+C:\Users\Noman\Downloads\Documents\Projects\schoolsystem\WebApplication5\bin\roslyn\csc.exe
+C:\Users\Noman\Downloads\Documents\Projects\schoolsystem\WebApplication5\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Noman\Downloads\Documents\Projects\schoolsystem\WebApplication5\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Noman\Downloads\Documents\Projects\schoolsystem\WebApplication5\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Noman\Downloads\Documents\Projects\schoolsystem\WebApplication5\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Noman\Downloads\Documents\Projects\schoolsystem\WebApplication5\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Noman\Downloads\Documents\Projects\schoolsystem\WebApplication5\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Noman\Downloads\Documents\Projects\schoolsystem\WebApplication5\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Noman\Downloads\Documents\Projects\schoolsystem\WebApplication5\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Noman\Downloads\Documents\Projects\schoolsystem\WebApplication5\bin\roslyn\vbc.exe
+C:\Users\Noman\Downloads\Documents\Projects\schoolsystem\WebApplication5\bin\roslyn\VBCSCompiler.exe
+C:\Users\Noman\Downloads\Documents\Projects\schoolsystem\WebApplication5\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Noman\Downloads\Documents\Projects\schoolsystem\WebApplication5\bin\WebApplication5.dll.config
+C:\Users\Noman\Downloads\Documents\Projects\schoolsystem\WebApplication5\bin\WebApplication5.dll
+C:\Users\Noman\Downloads\Documents\Projects\schoolsystem\WebApplication5\bin\WebApplication5.pdb
+C:\Users\Noman\Downloads\Documents\Projects\schoolsystem\WebApplication5\bin\Antlr3.Runtime.dll
+C:\Users\Noman\Downloads\Documents\Projects\schoolsystem\WebApplication5\bin\EntityFramework.dll
+C:\Users\Noman\Downloads\Documents\Projects\schoolsystem\WebApplication5\bin\EntityFramework.SqlServer.dll
+C:\Users\Noman\Downloads\Documents\Projects\schoolsystem\WebApplication5\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Noman\Downloads\Documents\Projects\schoolsystem\WebApplication5\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Noman\Downloads\Documents\Projects\schoolsystem\WebApplication5\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Noman\Downloads\Documents\Projects\schoolsystem\WebApplication5\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Noman\Downloads\Documents\Projects\schoolsystem\WebApplication5\bin\Microsoft.AI.Web.dll
+C:\Users\Noman\Downloads\Documents\Projects\schoolsystem\WebApplication5\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Noman\Downloads\Documents\Projects\schoolsystem\WebApplication5\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Noman\Downloads\Documents\Projects\schoolsystem\WebApplication5\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Noman\Downloads\Documents\Projects\schoolsystem\WebApplication5\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Noman\Downloads\Documents\Projects\schoolsystem\WebApplication5\bin\Newtonsoft.Json.dll
+C:\Users\Noman\Downloads\Documents\Projects\schoolsystem\WebApplication5\bin\System.Web.Helpers.dll
+C:\Users\Noman\Downloads\Documents\Projects\schoolsystem\WebApplication5\bin\System.Web.Mvc.dll
+C:\Users\Noman\Downloads\Documents\Projects\schoolsystem\WebApplication5\bin\System.Web.Optimization.dll
+C:\Users\Noman\Downloads\Documents\Projects\schoolsystem\WebApplication5\bin\System.Web.Razor.dll
+C:\Users\Noman\Downloads\Documents\Projects\schoolsystem\WebApplication5\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Noman\Downloads\Documents\Projects\schoolsystem\WebApplication5\bin\System.Web.WebPages.dll
+C:\Users\Noman\Downloads\Documents\Projects\schoolsystem\WebApplication5\bin\System.Web.WebPages.Razor.dll
+C:\Users\Noman\Downloads\Documents\Projects\schoolsystem\WebApplication5\bin\WebGrease.dll
+C:\Users\Noman\Downloads\Documents\Projects\schoolsystem\WebApplication5\bin\EntityFramework.xml
+C:\Users\Noman\Downloads\Documents\Projects\schoolsystem\WebApplication5\bin\EntityFramework.SqlServer.xml
+C:\Users\Noman\Downloads\Documents\Projects\schoolsystem\WebApplication5\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Noman\Downloads\Documents\Projects\schoolsystem\WebApplication5\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Noman\Downloads\Documents\Projects\schoolsystem\WebApplication5\bin\Microsoft.AI.Web.xml
+C:\Users\Noman\Downloads\Documents\Projects\schoolsystem\WebApplication5\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Noman\Downloads\Documents\Projects\schoolsystem\WebApplication5\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Noman\Downloads\Documents\Projects\schoolsystem\WebApplication5\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Noman\Downloads\Documents\Projects\schoolsystem\WebApplication5\bin\System.Web.Helpers.xml
+C:\Users\Noman\Downloads\Documents\Projects\schoolsystem\WebApplication5\bin\System.Web.Mvc.xml
+C:\Users\Noman\Downloads\Documents\Projects\schoolsystem\WebApplication5\bin\System.Web.Optimization.xml
+C:\Users\Noman\Downloads\Documents\Projects\schoolsystem\WebApplication5\bin\System.Web.Razor.xml
+C:\Users\Noman\Downloads\Documents\Projects\schoolsystem\WebApplication5\bin\System.Web.WebPages.xml
+C:\Users\Noman\Downloads\Documents\Projects\schoolsystem\WebApplication5\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Noman\Downloads\Documents\Projects\schoolsystem\WebApplication5\bin\System.Web.WebPages.Razor.xml
+C:\Users\Noman\Downloads\Documents\Projects\schoolsystem\WebApplication5\bin\Antlr3.Runtime.pdb
+C:\Users\Noman\Downloads\Documents\Projects\schoolsystem\WebApplication5\bin\Newtonsoft.Json.xml

@@ -1,0 +1,56 @@
+﻿@model WebApplication5.Models.eventss
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>eventss</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.events_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.events_name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.event_date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.event_date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.event_time)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.event_time)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.event_day)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.event_day)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

@@ -1,0 +1,104 @@
+﻿@model WebApplication5.Models.atten_nov
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<style>
+    .heading {
+        height: 45px;
+        background-color: dodgerblue;
+        color: white;
+        width: 240px;
+        border-radius: 14px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .container1 {
+        margin-top: -400px;
+    }
+
+    .btn {
+        color: dodgerblue;
+        background-color: white;
+        text-decoration: none;
+    }
+
+        .btn:hover {
+            color: white;
+            background-color: dodgerblue;
+        }
+</style>
+
+<br />
+<br />
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="heading">
+
+        <h3 style="color:white; padding-left: 6px; padding-top: 4px;font-family: calibri">Attendance Details</h3>
+    </div>
+    <br />
+    <br />
+    <div class="form-horizontal">
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.total_days, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.total_days, new { htmlAttributes = new { @class = "form-control", placeholder = "Total-Days" } })
+                @Html.ValidationMessageFor(model => model.total_days, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.present, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.present, new { htmlAttributes = new { @class = "form-control", placeholder = "Present" } })
+                @Html.ValidationMessageFor(model => model.present, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Absents, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Absents, new { htmlAttributes = new { @class = "form-control", placeholder = "Absent" } })
+                @Html.ValidationMessageFor(model => model.Absents, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.late, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.late, new { htmlAttributes = new { @class = "form-control", placeholder = "Late" } })
+                @Html.ValidationMessageFor(model => model.late, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.leave, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.leave, new { htmlAttributes = new { @class = "form-control", placeholder = "Leave" } })
+                @Html.ValidationMessageFor(model => model.leave, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.stu_fee_id, "stu_fee_id", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("stu_fee_id", null, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.stu_fee_id, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-block btn-default" />
+            </div>
+        </div>
+    </div>
+}

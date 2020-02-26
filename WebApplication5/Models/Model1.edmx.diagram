@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="60975712c16f42049e0ac4706d0bf6a4" Name="Diagram1">
+        <EntityTypeShape EntityType="smssystemModel.atten_april" Width="1.5" PointX="3" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="smssystemModel.atten_aug" Width="1.5" PointX="3" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="smssystemModel.atten_dec" Width="1.5" PointX="3" PointY="11.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="smssystemModel.atten_feb" Width="1.5" PointX="3" PointY="14.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="smssystemModel.atten_January" Width="1.5" PointX="3" PointY="18" IsExpanded="true" />
+        <EntityTypeShape EntityType="smssystemModel.atten_July" Width="1.5" PointX="3" PointY="21.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="smssystemModel.atten_June" Width="1.5" PointX="3" PointY="24.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="smssystemModel.atten_march" Width="1.5" PointX="3" PointY="27.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="smssystemModel.atten_may" Width="1.5" PointX="3" PointY="31.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="smssystemModel.atten_nov" Width="1.5" PointX="3" PointY="34.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="smssystemModel.atten_oct" Width="1.5" PointX="3" PointY="37.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="smssystemModel.atten_sep" Width="1.5" PointX="3" PointY="41.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="smssystemModel.classI_courses" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="smssystemModel.classII_courses" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="smssystemModel.classIII_courses" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="smssystemModel.classIV_courses" Width="1.5" PointX="5.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="smssystemModel.classV_courses" Width="1.5" PointX="6.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="smssystemModel.eventss" Width="1.5" PointX="5.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="smssystemModel.fee_Amount_April" Width="1.5" PointX="3" PointY="44.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="smssystemModel.fee_Amount_Augest" Width="1.5" PointX="3" PointY="47.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="smssystemModel.fee_Amount_December" Width="1.5" PointX="3" PointY="51" IsExpanded="true" />
+        <EntityTypeShape EntityType="smssystemModel.fee_Amount_February" Width="1.5" PointX="3" PointY="54.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="smssystemModel.fee_Amount_January" Width="1.5" PointX="3" PointY="57.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="smssystemModel.fee_Amount_July" Width="1.5" PointX="3" PointY="61" IsExpanded="true" />
+        <EntityTypeShape EntityType="smssystemModel.fee_Amount_June" Width="1.5" PointX="3" PointY="64.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="smssystemModel.fee_Amount_march" Width="1.5" PointX="3" PointY="67.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="smssystemModel.fee_Amount_May" Width="1.5" PointX="3" PointY="70.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="smssystemModel.fee_Amount_November" Width="1.5" PointX="3" PointY="74.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="smssystemModel.fee_Amount_Octuber" Width="1.5" PointX="3" PointY="77.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="smssystemModel.fee_Amount_September" Width="1.5" PointX="3" PointY="80.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="smssystemModel.IX_courses" Width="1.5" PointX="7.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="smssystemModel.playgroup_courses" Width="1.5" PointX="7.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="smssystemModel.tbl_admin" Width="1.5" PointX="8.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="smssystemModel.tbl_enrolment" Width="1.5" PointX="0.75" PointY="39.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="smssystemModel.tbl_registration" Width="1.5" PointX="9.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="smssystemModel.teacher" Width="1.5" PointX="5.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="smssystemModel.timetable" Width="1.5" PointX="7.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="smssystemModel.VI_courses" Width="1.5" PointX="9.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="smssystemModel.VII_courses" Width="1.5" PointX="10.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="smssystemModel.VIII_courses" Width="1.5" PointX="11.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="smssystemModel.X_courses" Width="1.5" PointX="11.75" PointY="6.75" IsExpanded="true" />
+        <AssociationConnector Association="smssystemModel.FK__atten_apr__stu_f__5BE2A6F2" ManuallyRouted="false" />
+        <AssociationConnector Association="smssystemModel.FK__atten_aug__stu_f__6754599E" ManuallyRouted="false" />
+        <AssociationConnector Association="smssystemModel.FK__atten_dec__stu_f__72C60C4A" ManuallyRouted="false" />
+        <AssociationConnector Association="smssystemModel.FK__atten_feb__stu_f__5629CD9C" ManuallyRouted="false" />
+        <AssociationConnector Association="smssystemModel.FK__atten_Jan__stu_f__534D60F1" ManuallyRouted="false" />
+        <AssociationConnector Association="smssystemModel.FK__atten_Jul__stu_f__6477ECF3" ManuallyRouted="false" />
+        <AssociationConnector Association="smssystemModel.FK__atten_Jun__stu_f__619B8048" ManuallyRouted="false" />
+        <AssociationConnector Association="smssystemModel.FK__atten_mar__stu_f__59063A47" ManuallyRouted="false" />
+        <AssociationConnector Association="smssystemModel.FK__atten_may__stu_f__5EBF139D" ManuallyRouted="false" />
+        <AssociationConnector Association="smssystemModel.FK__atten_nov__stu_f__6FE99F9F" ManuallyRouted="false" />
+        <AssociationConnector Association="smssystemModel.FK__atten_oct__stu_f__6D0D32F4" ManuallyRouted="false" />
+        <AssociationConnector Association="smssystemModel.FK__atten_sep__stu_f__6A30C649" ManuallyRouted="false" />
+        <AssociationConnector Association="smssystemModel.FK__fee_Amoun__stu_f__1ED998B2" ManuallyRouted="false" />
+        <AssociationConnector Association="smssystemModel.FK__fee_Amoun__stu_f__2A4B4B5E" ManuallyRouted="false" />
+        <AssociationConnector Association="smssystemModel.FK__fee_Amoun__stu_f__35BCFE0A" ManuallyRouted="false" />
+        <AssociationConnector Association="smssystemModel.FK__fee_Amoun__stu_f__1920BF5C" ManuallyRouted="false" />
+        <AssociationConnector Association="smssystemModel.FK__fee_Amoun__stu_f__164452B1" ManuallyRouted="false" />
+        <AssociationConnector Association="smssystemModel.FK__fee_Amoun__stu_f__276EDEB3" ManuallyRouted="false" />
+        <AssociationConnector Association="smssystemModel.FK__fee_Amoun__stu_f__24927208" ManuallyRouted="false" />
+        <AssociationConnector Association="smssystemModel.FK__fee_Amoun__stu_f__1BFD2C07" ManuallyRouted="false" />
+        <AssociationConnector Association="smssystemModel.FK__fee_Amoun__stu_f__21B6055D" ManuallyRouted="false" />
+        <AssociationConnector Association="smssystemModel.FK__fee_Amoun__stu_f__32E0915F" ManuallyRouted="false" />
+        <AssociationConnector Association="smssystemModel.FK__fee_Amoun__stu_f__300424B4" ManuallyRouted="false" />
+        <AssociationConnector Association="smssystemModel.FK__fee_Amoun__stu_f__2D27B809" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,54 @@
+﻿
+@{
+    ViewBag.Title = "Fee";
+}
+
+<div>
+    <h2>Fee</h2>
+</div>
+<style>
+    .containerr {
+        margin-left: 439px;
+    }
+
+    .btn {
+        background-color: cornflowerblue;
+        color: white;
+    }
+
+        .btn:hover {
+            background-color: white;
+            color: cornflowerblue;
+        }
+
+    h2 {
+        background-color: cornflowerblue;
+        color: white;
+        text-align: center;
+        font-family: Calibri;
+    }
+</style>
+
+<div class="containerr">
+
+    <input class="btn btn-block btn-default" type="button" value="January" onclick="location.href='@Url.Action("Create", "fee_Amount_January")';return false;" />
+    <input class="btn btn-block btn-default" type="button" value="February" onclick="location.href='@Url.Action("Create", "fee_Amount_February")';return false;" />
+    <input class="btn btn-block btn-default" type="button" value="March" onclick="location.href='@Url.Action("Create", "fee_Amount_march")';return false;" />
+    <input class="btn btn-block btn-default" type="button" value="April" onclick="location.href='@Url.Action("Create", "fee_Amount_April")';return false;" />
+    <input class="btn btn-block btn-default" type="button" value="May" onclick="location.href='@Url.Action("Create", "fee_Amount_May")';return false;" />
+    <input class="btn btn-block btn-default" type="button" value="June" onclick="location.href='@Url.Action("Create", "fee_Amount_June")';return false;" />
+    <input class="btn btn-block btn-default" type="button" value="July" onclick="location.href='@Url.Action("Create", "fee_Amount_July")';return false;" />
+    <input class="btn btn-block btn-default" type="button" value="August" onclick="location.href='@Url.Action("Create", "fee_Amount_Augest")';return false;" />
+    <input class="btn btn-block btn-default" type="button" value="September" onclick="location.href='@Url.Action("Create", "fee_Amount_September")';return false;" />
+    <input class="btn btn-block btn-default" type="button" value="October" onclick="location.href='@Url.Action("Create", "fee_Amount_Octuber")';return false;" />
+    <input class="btn btn-block btn-default" type="button" value="November" onclick="location.href='@Url.Action("Create", "fee_Amount_November")';return false;" />
+    <input class="btn btn-block btn-default" type="button" value="December" onclick="location.href='@Url.Action("Create", "fee_Amount_December")';return false;" />
+
+
+</div>
+
+
+<div>
+    <img class="img-responsive" style="height: 285px;margin-top:-418px;" src="~/images/9175247.jpg" />
+    <img class="img-responsive" style="height: 285px;margin-top:-283px; margin-left:722px;" src="~/images/women.jpg" />
+</div>

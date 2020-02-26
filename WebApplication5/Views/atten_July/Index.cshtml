@@ -1,0 +1,103 @@
+﻿@model IEnumerable<WebApplication5.Models.atten_July>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<style>
+    .btn {
+        color: dodgerblue;
+        background-color: white;
+        text-decoration: none;
+    }
+
+        .btn:hover {
+            color: white;
+            background-color: dodgerblue;
+        }
+
+    .heading {
+        height: 45px;
+        background-color: dodgerblue;
+        color: white;
+        width: 100%;
+        border-radius: 14px;
+        text-align: center;
+    }
+</style>
+
+<div class="heading">
+
+    <h3 style="color:white; padding-top: 4px;font-family: calibri">Attendance July </h3>
+</div>
+<br />
+
+
+<button class="btn btn-default" onclick="location.href='@Url.Action("Create", "atten_July")';return false;">Add Attendance</button>
+
+<br /><br />
+<table class="table">
+    <tr>
+        <th>
+            ID
+        </th>
+        <th>
+            Name
+        </th>
+        <th>
+            Days
+        </th>
+        <th>
+            Present
+        </th>
+        <th>
+            Absent
+        </th>
+        <th>
+            Late
+        </th>
+        <th>
+            Leave
+        </th>
+
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.tbl_enrolment.Stu_id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.tbl_enrolment.Stu_f_name)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.total_days)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.present)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Absents)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.late)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.leave)
+            </td>
+
+            <td>
+                @Html.ActionLink("Details", "Details", new { id = item.fee_id })
+            </td>
+            <td>
+                @Html.ActionLink("Delete", "Delete", new { id = item.fee_id })
+            </td>
+        </tr>
+    }
+
+</table>
+
+

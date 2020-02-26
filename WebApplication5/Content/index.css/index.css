@@ -1,0 +1,29 @@
+﻿.body {
+        background: url();
+        background-repeat: no-repeat;
+    }
+
+    .img {
+        height: 150px;
+        width: 150px;
+        border: 5px solid black;
+        margin: 5px;
+        margin-top: 50px;
+        transition: 1s;
+    }
+    .div2{
+            margin-left: 252px;
+           margin-top: -266px;
+    }
+    .div3{
+            margin-left: 523px;
+            margin-top: -265px;
+    }
+    .div5{
+        margin-left: 252px;
+           margin-top: -266px;
+    }
+    .div6{
+         margin-left: 523px;
+            margin-top: -265px;
+    }

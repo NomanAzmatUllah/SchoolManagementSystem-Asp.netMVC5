@@ -1,0 +1,104 @@
+﻿@model IEnumerable<WebApplication5.Models.teacher>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<style>
+    .btn {
+        color: dodgerblue;
+        background-color: white;
+        text-decoration: none;
+    }
+
+        .btn:hover {
+            color: white;
+            background-color: dodgerblue;
+        }
+
+    .heading {
+        height: 45px;
+        background-color: dodgerblue;
+        color: white;
+        width: 100%;
+        border-radius: 14px;
+        text-align: center;
+    }
+</style>
+
+<div class="heading">
+
+    <h3 style="color:white; padding-top: 4px;font-family: calibri">Teacher Details</h3>
+</div>
+<br />
+
+@using (Html.BeginForm("Index", "teachers"))
+{
+    <input type="text" id="search" name="search" class="col-md-10" placeholder="Search-Id" />
+
+    <input type="submit" value="Search" class="btn btn-danger btn-default" />
+}
+
+<br />
+<br />
+
+<button class="btn btn-default" onclick="location.href='@Url.Action("Create", "teachers")';return false;">Add Teacher</button>
+
+<br /><br />
+
+<table class="table table-responsive table-striped table-condensed">
+    <tr>
+        <th>Id</th>
+        <th>
+          Name
+        </th>
+        <th>
+            Appointment Date
+        </th>
+        <th>
+          Qualification
+        </th>
+        <th>
+          Course
+        </th>
+        <th>
+         Contact
+        </th>
+        <th>
+        Salary
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.teacher_id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.teacher_name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Teacherjoin_date)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Qualification)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Teaching_course)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.teacher_contact)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.teacher_monthly_salary)
+        </td>
+        <td>
+            @*@Html.ActionLink("Edit", "Edit", new { id=item.teacher_id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.teacher_id }) |*@
+            @Html.ActionLink("Delete", "Delete", new { id=item.teacher_id })
+        </td>
+    </tr>
+}
+
+</table>

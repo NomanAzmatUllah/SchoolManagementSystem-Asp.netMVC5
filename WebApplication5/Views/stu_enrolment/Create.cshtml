@@ -1,0 +1,247 @@
+﻿@model WebApplication5.Models.tbl_enrolment
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<style>
+    .heading {
+        height: 45px;
+        background-color: dodgerblue;
+        color: white;
+        width: 240px;
+        border-radius: 14px;
+        // margin-left: 380px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .container1 {
+      
+        margin-top: -343px;
+        height:100%;
+        width:100%;
+        background-repeat:no-repeat;
+        display: block;
+        position: relative;
+    }
+
+    .btn {
+        color: dodgerblue;
+        background-color: white;
+        text-decoration: none;
+    }
+
+        .btn:hover {
+            color: white;
+            background-color: dodgerblue;
+        }
+        .forms{
+            margin-top: -51px;
+             margin-left: 503px;
+        }
+        .image{
+     height: 218px;
+    margin-left: 855px;
+    margin-top: -113px;
+    opacity: 0.5;
+        }
+        
+        .image2{
+            margin-left: 984px;
+             height: 299px;
+             margin-top: 37px;
+             opacity:0.3;
+        }
+
+     
+</style>
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <br />
+
+    <div class="heading">
+
+        <h3 style="color:white; padding-left: 6px; padding-top: 4px;font-family: calibri">Enrollment</h3>
+    </div>
+    <br />
+    <br />
+<img class="image2 img-responsive" src="~/images/mp90043948211.jpg" />
+    <div class="container1">
+        <div class="form-horizontal">
+
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            <div class="form-group">
+                @Html.LabelFor(model => model.Stu_id, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Stu_id, new { htmlAttributes = new { @class = "form-control", placeholder = "Id" } })
+                    @Html.ValidationMessageFor(model => model.Stu_id, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Stu_f_name, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Stu_f_name, new { htmlAttributes = new { @class = "form-control", placeholder = "First-Name" } })
+                    @Html.ValidationMessageFor(model => model.Stu_f_name, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <div class="forms">
+                    @Html.LabelFor(model => model.Stu_l_name, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.Stu_l_name, new { htmlAttributes = new { @class = "form-control", placeholder = "Last-Name" } })
+                        @Html.ValidationMessageFor(model => model.Stu_l_name, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Stu_father_name, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Stu_father_name, new { htmlAttributes = new { @class = "form-control", placeholder = "Fahter-Name" } })
+                    @Html.ValidationMessageFor(model => model.Stu_father_name, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="forms">
+                    @Html.LabelFor(model => model.Stu_father_mobile_Number, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.Stu_father_mobile_Number, new { htmlAttributes = new { @class = "form-control", placeholder = "Father mobile-Number" } })
+                        @Html.ValidationMessageFor(model => model.Stu_father_mobile_Number, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Stu_father_cnic, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Stu_father_cnic, new { htmlAttributes = new { @class = "form-control", placeholder = "Cnic" } })
+                    @Html.ValidationMessageFor(model => model.Stu_father_cnic, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="forms">
+                    @Html.LabelFor(model => model.Stu_religion, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.Stu_religion, new { htmlAttributes = new { @class = "form-control", placeholder = "Religion" } })
+                        @Html.ValidationMessageFor(model => model.Stu_religion, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Stu_gender, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Stu_gender, new { htmlAttributes = new { @class = "form-control", placeholder = "Gender" } })
+                    @Html.ValidationMessageFor(model => model.Stu_gender, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="forms">
+                    @Html.LabelFor(model => model.Stu_contact, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.Stu_contact, new { htmlAttributes = new { @class = "form-control", placeholder = "Contact" } })
+                        @Html.ValidationMessageFor(model => model.Stu_contact, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Stu_address, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Stu_address, new { htmlAttributes = new { @class = "form-control", placeholder = "Address" } })
+                    @Html.ValidationMessageFor(model => model.Stu_address, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="forms">
+                    @Html.LabelFor(model => model.Stu_date_of_birth, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.Stu_date_of_birth, new { htmlAttributes = new { @class = "form-control", placeholder = "Date-Of-Birth" } })
+                        @Html.ValidationMessageFor(model => model.Stu_date_of_birth, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Stu_nationality, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Stu_nationality, new { htmlAttributes = new { @class = "form-control", placeholder = "Nationality" } })
+                    @Html.ValidationMessageFor(model => model.Stu_nationality, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="forms">
+                    @Html.LabelFor(model => model.Stu_birth_place, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.Stu_birth_place, new { htmlAttributes = new { @class = "form-control", placeholder = "Birth-Place" } })
+                        @Html.ValidationMessageFor(model => model.Stu_birth_place, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Stu_Emergency_contact, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Stu_Emergency_contact, new { htmlAttributes = new { @class = "form-control", placeholder = "Energancy-Contact" } })
+                    @Html.ValidationMessageFor(model => model.Stu_Emergency_contact, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="forms">
+                    @Html.LabelFor(model => model.Stu_city, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.Stu_city, new { htmlAttributes = new { @class = "form-control", placeholder = "City" } })
+                        @Html.ValidationMessageFor(model => model.Stu_city, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Stu_email_address, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Stu_email_address, new { htmlAttributes = new { @class = "form-control", placeholder = "EmailAddress" } })
+                    @Html.ValidationMessageFor(model => model.Stu_email_address, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="forms">
+                    @Html.LabelFor(model => model.Stu_country, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.Stu_country, new { htmlAttributes = new { @class = "form-control", placeholder = "Country" } })
+                        @Html.ValidationMessageFor(model => model.Stu_country, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Stu_class, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Stu_class, new { htmlAttributes = new { @class = "form-control", placeholder = "class" } })
+                    @Html.ValidationMessageFor(model => model.Stu_class, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Add" class="btn btn-block btn-default" />
+                </div>
+            </div>
+        </div>
+    </div>
+}
+<img class="image img-responsive" src="~/images/iSt_000019277803_600px.jpg" />

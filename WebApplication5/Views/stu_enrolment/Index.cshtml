@@ -1,0 +1,194 @@
+﻿@model IEnumerable<WebApplication5.Models.tbl_enrolment>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<style>
+    .btn {
+        color: dodgerblue;
+        background-color: white;
+        text-decoration: none;
+    }
+
+        .btn:hover {
+            color: white;
+            background-color: dodgerblue;
+        }
+
+    .heading {
+        height: 45px;
+        background-color: dodgerblue;
+        color: white;
+        width: 100%;
+        border-radius: 14px;
+        text-align: center;
+    }
+</style>
+
+<br />
+<br />
+
+@using (Html.BeginForm("Index", "stu_enrolment"))
+{
+    <input type="text" id="search" name="search" class="col-md-10" placeholder="Search-Id" />
+
+    <input type="submit" value="Search" class="btn btn-danger btn-default" />
+}
+
+
+
+<div class="heading">
+
+    <h3 style="color:white; padding-top: 4px;font-family: calibri">Enrollment Details</h3>
+</div>
+<br />
+
+
+<button class="btn btn-default" onclick="location.href='@Url.Action("Create", "stu_enrolment")';return false;">Add Member</button>
+
+<br /><br />
+
+
+<table class="table table-condensed table-hover table-responsive table-striped">
+    <tr>
+        <th>
+            Id
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Stu_f_name)
+        </th>
+        @*<th>
+            @Html.DisplayNameFor(model => model.Stu_l_name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Stu_father_name)
+        </th>*@
+        <th>
+            @Html.DisplayNameFor(model => model.Stu_father_mobile_Number)
+        </th>
+        @*<th>
+            @Html.DisplayNameFor(model => model.Stu_father_cnic)
+        </th>*@
+        @*<th>
+            @Html.DisplayNameFor(model => model.Stu_religion)
+        </th>*@
+        <th>
+            @Html.DisplayNameFor(model => model.Stu_gender)
+        </th>
+        @*<th>
+            @Html.DisplayNameFor(model => model.Stu_contact)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Stu_address)
+        </th>*@
+        <th>
+            @Html.DisplayNameFor(model => model.Stu_date_of_birth)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Stu_nationality)
+        </th>
+        @*<th>
+            @Html.DisplayNameFor(model => model.Stu_birth_place)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Stu_Emergency_contact)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Stu_city)
+        </th>*@
+        <th>
+            @Html.DisplayNameFor(model => model.Stu_email_address)
+        </th>
+        @*<th>
+            @Html.DisplayNameFor(model => model.Stu_country)
+        </th>*@
+        <th>
+            @Html.DisplayNameFor(model => model.Stu_class)
+        </th>
+      <th></th>
+        <th>
+            Edit
+        </th>
+        <th>
+            Details
+        </th>
+        <th>
+            Delete
+        </th>
+    </tr>
+
+@foreach (var item in Model)
+{
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Stu_id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Stu_f_name)
+        </td>
+        @*<td>
+                @Html.DisplayFor(modelItem => item.Stu_l_name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Stu_father_name)
+            </td>*@
+        <td>
+            @Html.DisplayFor(modelItem => item.Stu_father_mobile_Number)
+        </td>
+        @*<td>
+                @Html.DisplayFor(modelItem => item.Stu_father_cnic)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Stu_religion)
+            </td>*@
+        <td>
+            @Html.DisplayFor(modelItem => item.Stu_gender)
+        </td>
+        @*<td>
+                @Html.DisplayFor(modelItem => item.Stu_contact)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Stu_address)
+            </td>*@
+        <td>
+            @Html.DisplayFor(modelItem => item.Stu_date_of_birth)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Stu_nationality)
+        </td>
+        @*<td>
+                @Html.DisplayFor(modelItem => item.Stu_birth_place)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Stu_Emergency_contact)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Stu_city)
+            </td>*@
+        <td>
+            @Html.DisplayFor(modelItem => item.Stu_email_address)
+        </td>
+        @*<td>
+                @Html.DisplayFor(modelItem => item.Stu_country)
+            </td>*@
+        <td>
+            @Html.DisplayFor(modelItem => item.Stu_class)
+        </td>
+
+        <td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id = item.Stu_id })
+        </td>
+
+        <td>
+            @Html.ActionLink("Details", "Details", new { id = item.Stu_id })
+        </td>
+
+        <td>
+           @Html.ActionLink("Delete", "Delete", new { id = item.Stu_id })
+        </td>
+    </tr>
+}
+
+</table>

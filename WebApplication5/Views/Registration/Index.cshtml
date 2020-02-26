@@ -1,0 +1,177 @@
+﻿@model IEnumerable<WebApplication5.Models.tbl_registration>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<style>
+    .btn {
+        color: dodgerblue;
+        background-color: white;
+        text-decoration: none;
+    }
+
+        .btn:hover {
+            color: white;
+            background-color: dodgerblue;
+        }
+
+    .heading {
+        height: 45px;
+        background-color: dodgerblue;
+        color: white;
+        width: 100%;
+        border-radius: 14px;
+        // margin-left: 380px;
+        text-align: center;
+    }
+</style>
+
+<br />
+<br />
+
+@using (Html.BeginForm("Index", "Registration"))
+{
+    <input class="col-md-10" type="text" id="search" name="search" placeholder="Search-ID" />
+
+    <input type="submit" value="Search" class="btn btn-danger btn-default"/>
+}
+
+<div class="heading">
+
+    <h3 style="color:white; padding-top: 4px; font-family:calibri">Registration Details</h3>
+</div>
+<br />
+
+
+<button class="btn btn-default" onclick="location.href='@Url.Action("Create", "Registration")';return false;">Add Member</button>
+
+<br /><br />
+
+
+<table class="table table-responsive table-striped table-condensed">
+    <tr>
+        <th>
+            Id
+        </th>
+        <th>
+            Name
+        </th>
+        @*<th>
+                @Html.DisplayNameFor(model => model.Stu_l_name)
+            </th>*@
+        @*<th>
+                @Html.DisplayNameFor(model => model.Stu_father_name)
+            </th>*@
+        @*<th>
+                @Html.DisplayNameFor(model => model.stu_father_cnic)
+            </th>*@
+        <th>
+            Nationality
+        </th>
+        <th>
+            R-Date
+        </th>
+        <th>
+            Gender
+        </th>
+        <th>
+            Address
+        </th>
+        <th>
+            Contact
+        </th>
+
+        @*<th>
+                @Html.DisplayNameFor(model => model.stu_A_Contact)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.stu_date_of_birth)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Stu_religion)
+            </th>*@
+        <th>
+            Class
+        </th>
+        <th>
+
+        </th>
+        <th>
+            Edit
+        </th>
+        <th>
+            Details
+        </th>
+        <th>
+            Remove
+        </th>
+
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Stu_reg_id)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.Stu_f_name)
+            </td>
+            @*<td>
+                    @Html.DisplayFor(modelItem => item.Stu_l_name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Stu_father_name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.stu_father_cnic)
+                </td>*@
+            <td>
+                @Html.DisplayFor(modelItem => item.stu_nationality)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.stu_reg_date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Stu_gender)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Stu_address)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.stu_contact)
+            </td>
+            @*<td>
+                    @Html.DisplayFor(modelItem => item.stu_A_Contact)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.stu_date_of_birth)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Stu_religion)
+                </td>*@
+            <td>
+                @Html.DisplayFor(modelItem => item.stu_class)
+            </td>
+
+            <td>
+
+            <td>
+
+                @Html.ActionLink("Edit", "Edit", new { id = item.Stu_reg_id })
+
+            </td>
+
+            <td>
+                @Html.ActionLink("Details", "Details", new { id = item.Stu_reg_id })
+            </td>
+
+            <td>
+                @Html.ActionLink("Delete", "Delete", new { id = item.Stu_reg_id })
+            </td>
+        </tr>
+    }
+
+</table>

@@ -1,0 +1,64 @@
+﻿@model WebApplication5.Models.atten_June
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<table class="table table-responsive table-striped table-condensed table-responsive">
+    <tr>
+        <th>
+            ID
+        </th>
+        <th>
+            Name
+        </th>
+        <th>
+            Days
+        </th>
+        <th>
+            Present
+        </th>
+        <th>
+            Absent
+        </th>
+        <th>
+            Late
+        </th>
+        <th>
+            Leave
+        </th>
+    </tr>
+
+
+    <tr>
+        <td>
+            @Html.DisplayFor(model => model.fee_id)
+        </td>
+        <td>
+            @Html.DisplayFor(model => model.tbl_enrolment.Stu_f_name)
+        </td>
+
+        <td>
+            @Html.DisplayFor(model => model.total_days)
+        </td>
+        <td>
+            @Html.DisplayFor(model => model.present)
+        </td>
+        <td>
+            @Html.DisplayFor(model => model.Absents)
+        </td>
+        <td>
+            @Html.DisplayFor(model => model.late)
+        </td>
+        <td>
+            @Html.DisplayFor(model => model.leave)
+        </td>
+    </tr>
+
+</table>
+
+
+
+
+
+
